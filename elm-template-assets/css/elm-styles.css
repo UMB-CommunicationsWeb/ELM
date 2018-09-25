@@ -1,0 +1,386 @@
+
+/*Custom formatting for the Elm web templates
+Developed by UMB' communications web team.*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# General typography
+# General elements
+# Page header
+# Page footer
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# General typography
+--------------------------------------------------------------*/
+
+/*Import Typekit (includes the fonts Alternate Gothic and Proxima Nova)*/
+@import url("https://use.typekit.net/bki6cop.css");
+
+body {
+	font-family: "proxima-nova",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "alternate-gothic-no-2-d",sans-serif;
+}
+
+a, a:visited {
+	text-decoration: underline;
+	color: #599b46;
+}
+a:hover, a:focus, a:active {
+	color: #000000;
+}
+
+#elmMainContent h3 {
+	color: #599b46;
+	border-bottom: 3px solid #999999;
+	text-transform: uppercase;
+	margin: .75em 0px .5em 0px;
+}
+
+@media (max-width: 767px) {
+	#elmMainContent h3 {
+		font-family: "proxima-nova",sans-serif;
+		color: #fff;
+		border-bottom: none;
+		background-color: #599b46;
+		padding: .25em .5em;
+	}
+}
+
+.umb_lead {
+	color: #333;
+	font-size: 145%;
+    line-height: 1.3;
+    font-weight: 200;
+}
+
+strong {
+	text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# General elements
+--------------------------------------------------------------*/
+
+
+a {
+	-webkit-transition:  color .25s, background-color .25s;
+	transition: color .25s, background-color .25s;
+}
+
+#elmMainContent {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+a.umb_pillbutton, a.umb_pillbutton:visited {
+	font-size: .8em;
+	font-weight: 500;
+	text-transform: uppercase;
+    background-color: #999;
+    color: #FFF;
+    text-decoration: none;
+    padding: .4em 1em;
+    border-radius: .5em;
+    display: inline-block;
+    margin-bottom: 1em;
+    line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+	a.umb_pillbutton {
+		font-size: 1em;
+		width: 100%;
+		padding: .75em 1em;
+		border-radius: 0;
+	}
+}
+
+a.umb_pillbutton:hover, a.umb_pillbutton:focus, a.umb_pillbutton:active {
+	background-color: #599b46;
+}
+
+/*--------------------------------------------------------------
+# Page header
+--------------------------------------------------------------*/
+
+#davidgeMark {
+	max-width: 200px;
+	min-width: 200px;
+	background-image: url(../images/davidge-mark.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 767px) {
+	#davidgeMark {
+		max-width: 100px;
+		min-width: 100px;
+	}
+}
+
+#elmTitleColumn {
+	margin-top: 3em;	
+}
+
+#elmUMBCallback {
+	display: block;
+	font-size: .9em;
+	margin-bottom: 1.25em
+}
+
+#elmUMBCallback a, #elmUMBCallback a:visited {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#elmUMBCallback a:hover, #elmUMBCallback a:focus, #elmUMBCallback a:active {
+	color: #599b46;
+}
+
+a#elmHomepageLink, a#elmHomepageLink:visited {
+	color:#000000;
+	text-decoration: none;
+}
+
+#elmBranding h1, #elmBranding h2 {
+	display:inline-block;
+	line-height: .85;
+}
+
+a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
+	color:#599b46;
+}
+
+#elmMainTitle {
+	font-size: 6em;
+	margin-right: .2em;
+}
+@media (max-width: 767px) {
+	#elmMainTitle {
+		font-size: 4em;
+	}
+}
+
+#elmPageTitle {
+	text-transform: uppercase;
+	color: #454545;
+	font-family: "alternate-gothic-no-1-d",sans-serif;
+	font-size: 3em;
+}
+@media (max-width: 767px) {
+	#elmPageTitle {
+		font-size: 2em;
+	}
+}
+
+#searchColumn-desktop {
+	margin-top: 3em;
+}
+
+.elm-search-bar input#query {
+	border-radius: 0;
+	border: 1px solid #000;
+	padding-left: .5em;
+	color: #000;
+	width: 75%;
+	height: 2em;
+	margin: 0;
+}
+
+.elm-search-bar button#elm-search-submit {
+	width: 20%;
+	margin-left:5%;
+	height: 2em;
+	margin: 0;
+	float: right;
+	background-color: transparent;
+	border: none;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+}
+
+@media (max-width: 767px) {
+	.elm-search-bar button#elm-search-submit {
+		background-image: url(../images/search-mobile.png);
+	}
+}
+
+#elmMainNavigation {
+	background-color: #599b46;
+}
+
+#elmMainNavigation a, #elmMainNavigation a:visited {
+	color: #fff;
+    display: inline-block;
+    padding: .9em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+#elmMainNavigation a:hover, #elmMainNavigation a:focus, #elmMainNavigation a:active {
+	background-color: #386d2d;
+}
+
+.secondaryNav {
+	display:none;
+	border-bottom: 1em solid #599b46;
+}
+
+.secondaryNav a, .secondaryNav a:visited {
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	padding: .75em;
+}
+
+.secondaryNav a:hover, .secondaryNav a:focus, .secondaryNav a:active {
+	color: #599b46;
+}
+
+.mobileMenuToggle {
+    display: inline-block;
+    cursor: pointer;
+    max-width: 100px;
+    margin-top: 3em;
+}
+
+.mobileMenuToggle .bar1, .mobileMenuToggle .bar2, .mobileMenuToggle .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.mobileMenuToggle.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.mobileMenuToggle.change .bar2 {opacity: 0;}
+
+.mobileMenuToggle.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#elmMainNavigation-mobile {
+	background-color: #599b46;
+	display: none;
+}
+
+#elmMainNavigation-mobile a, #elmMainNavigation-mobile a:visited, #elmMainNavigation-mobile span, #elmMainNavigation-mobile form {
+	color: #fff;
+	text-decoration: none;
+	padding: 1em 1.25rem;
+	display: block;
+	width:100%;
+	font-size: 1.25em;
+	font-weight: bolder;
+}
+
+#elmMainNavigation-mobile a:hover, #elmMainNavigation-mobile a:focus, #elmMainNavigation-mobile a:active {
+	background-color: #386d2d
+}
+
+#elmMainNavigation-mobile .secondaryNav-mobile a {
+	display: inline-block;
+	width: auto;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+header {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+/*--------------------------------------------------------------
+# Page footer
+--------------------------------------------------------------*/
+
+#elmFooter {
+	background-image: url(../images/bg-tree.png);
+	background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: right bottom;
+	padding-bottom: 2em;
+}
+
+@media (max-width: 767px) {
+	#elmFooter {
+		background-image: none;
+		background-color: #599b46;
+		padding: 3em 1.5em;
+		color: #fff;
+	}
+}
+
+#elmFooter h2 {
+	font-size: 4em;
+	line-height: 1;
+}
+
+#elmFooter h4 {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+#elmFooterTopicsSchools a, #elmFooterTopicsSchools a:visited {
+	color: #000;
+	display: block;
+	text-decoration: none;
+}
+
+#elmFooterTopicsSchools a:hover, #elmFooterTopicsSchools a:focus, #elmFooterTopicsSchools a:active {
+	color: #599b46;
+}
+
+@media (max-width: 767px) {
+	#elmFooterTopicsSchools a, #elmFooterTopicsSchools a:visited {
+		color: #fff;
+		display: inline-block;
+		padding: .75em 1.5em .75em 0;
+	}
+
+	#elmFooterTopicsSchools a:hover, #elmFooterTopicsSchools a:focus, #elmFooterTopicsSchools a:active {
+		color: #000;
+	}
+}
+
+#elmFooterTopicsSchools h4 {
+	margin-top: 1em;
+}
+
+#elmTree-mobile {
+		height: 12em;
+		background-image: url(../images/bg-tree.png);
+		background-size: contain;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+}
+
+#elmCopyright {
+	background-color: #599b46;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: .8em;
+	padding: 1em 1.5em;
+}
