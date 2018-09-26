@@ -446,6 +446,24 @@ header {
 	background-color: #386d2d;
 }
 
+/*Helps lay out the Masonry grid on full topic feed page*/
+.elm-feed-main .elm-feed-listing {
+	width: 49%;
+	float: left;
+}
+#elm-feed-gutter-sizer {
+	width: 2%;
+}
+@media (max-width: 767px) {
+	.elm-feed-main .elm-feed-listing {
+		width: 100%;
+		float: left;
+	}
+	#elm-feed-gutter-sizer {
+		width: 0;
+	}
+}
+
 /*--------------------------------------------------------------
 # Elm stories feeds
 --------------------------------------------------------------*/
@@ -473,11 +491,12 @@ header {
 .elm-stories-listing .elm-stories-blurb {
 	color: #000;
 	margin-bottom: 1.5em;
+	line-height: 1.25;
 }
 
 .elm-stories-listing .elm-stories-image {
 	height: 100%;
 	background-size: cover;
-	background-position: 33% center;
-	min-height: 8em;
+	background-position: center 33%;
+	min-height: 7em;
 }
