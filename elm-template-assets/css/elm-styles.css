@@ -72,6 +72,12 @@ strong {
 # General elements
 --------------------------------------------------------------*/
 
+html {
+	background-color: #599b46;
+}
+body {
+	background-color: #fff;
+}
 
 a {
 	-webkit-transition:  color .25s, background-color .25s;
