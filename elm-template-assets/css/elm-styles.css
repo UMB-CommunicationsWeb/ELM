@@ -10,6 +10,8 @@ Developed by UMB' communications web team.*/
 # General elements
 # Page header
 # Page footer
+# Full topics feeds
+# Elm stories feeds
 
 --------------------------------------------------------------*/
 
@@ -85,7 +87,8 @@ a {
 	margin-bottom: 4em;
 }
 
-a.umb_pillbutton, a.umb_pillbutton:visited {
+a.umb_pillbutton, a.umb_pillbutton:visited,
+.elm-feed-filters a, .elm-feed-filters a:visited {
 	font-size: .8em;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -100,7 +103,7 @@ a.umb_pillbutton, a.umb_pillbutton:visited {
 }
 
 @media (max-width: 767px) {
-	a.umb_pillbutton {
+	a.umb_pillbutton, .elm-feed-filters a {
 		font-size: 1em;
 		width: 100%;
 		padding: .75em 1em;
@@ -108,7 +111,8 @@ a.umb_pillbutton, a.umb_pillbutton:visited {
 	}
 }
 
-a.umb_pillbutton:hover, a.umb_pillbutton:focus, a.umb_pillbutton:active {
+a.umb_pillbutton:hover, a.umb_pillbutton:focus, a.umb_pillbutton:active,
+.elm-feed-filters a:hover, .elm-feed-filters a:focus, .elm-feed-filters a:active {
 	background-color: #599b46;
 }
 
@@ -389,4 +393,91 @@ header {
 	text-transform: uppercase;
 	font-size: .8em;
 	padding: 1em 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Full topics feeds
+--------------------------------------------------------------*/
+
+.elm-feed-filters {
+	margin-bottom: 1em;
+}
+
+.elm-feed-filters a, .elm-feed-filters a:visited {
+	margin-right: .5em;
+	margin-bottom: .75em;
+}
+
+@media (max-width: 767px) {
+	.elm-feed-filters a, .elm-feed-filters a:visited {
+		width: auto;
+		border-radius: .5em;
+	}
+}
+
+.elm-feed-filters a.active, .elm-feed-filters a.active:visited {
+	background-color: #599b46;
+}
+
+.elm-feed-filters .elm-feed-usertype a, .elm-feed-filters .elm-feed-usertype a:visited {
+	background-color: #3a3a3a;
+}
+
+.elm-feed-filters .elm-feed-usertype a:hover, .elm-feed-filters .elm-feed-usertype a:active, .elm-feed-filters .elm-feed-usertype a:focus {
+	background-color: #599b46;
+}
+
+.elm-feed-showMore a, .elm-feed-showMore a:visited {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+    padding: .9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    background-color: #599b46;
+    margin-top: 2em;
+}
+
+.elm-feed-showMore a:hover, .elm-feed-showMore a:active, .elm-feed-showMore a:focus {
+	background-color: #386d2d;
+}
+
+/*--------------------------------------------------------------
+# Elm stories feeds
+--------------------------------------------------------------*/
+
+.elm-stories-listing {
+	border-bottom: 1px solid #000;
+	margin-bottom: 1em;
+}
+
+.elm-stories-listing a {
+	text-decoration: none;
+}
+
+.elm-stories-listing .elm-stories-date {
+	font-weight: bold;
+	display: block;
+    margin-bottom: .5em;
+    color: #000;
+}
+
+.elm-stories-listing h4 {
+	font-family: "proxima-nova",sans-serif;
+}
+
+.elm-stories-listing .elm-stories-blurb {
+	color: #000;
+	margin-bottom: 1.5em;
+}
+
+.elm-stories-listing .elm-stories-image {
+	height: 100%;
+	background-size: cover;
+	background-position: 33% center;
+	min-height: 8em;
 }
