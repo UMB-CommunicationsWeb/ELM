@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- Meta tags that are the same for all pages -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="author" content="University of Maryland, Baltimore">
+    <meta name="generator" content="TerminalFour Site Manager">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="University of Maryland, Baltimore" />
+    <meta property="og:locale" content="en_us" />
+    <meta property="og:title" content="The Elm" />
+
+    <!-- Meta tags that will be unique to each page -->
+
+    <meta property="og:title" content="The Elm" />
+    <meta property="og:image" content="Image link goes here"/>
+    <meta name="description" content="The Elm is a publication of the University of Maryland, Baltimore (UMB)." />
+    <title>The Elm</title> 
+
+    <!--Favicon-->      
+    <link rel="icon" type="image/png" href="elm-template-assets/images/elm-favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="elm-template-assets/bootstrapV4-1-3/bootstrap.min.css" />
+
+    <!-- The Elm template CSS -->
+    <link rel="stylesheet" href="elm-template-assets/css/elm-styles.css" />
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div id="elmBranding" class="container" >
+          <div class="row">
+          
+            <div class="col-2" id="davidgeMark"> </div>
+
+            <div class="col" id="elmTitleColumn">
+              <span id="elmUMBCallback">The Elm is a publication of <a href="https://www.umaryland.edu/" target="_blank">The University of Maryland, Baltimore</a></span>
+
+              <a id="elmHomepageLink" href="home.html">
+                <h1 id="elmMainTitle">The Elm</h1>
+              </a>
+              <h2 id="elmPageTitle">Subtitle Goes Here</h2>
+            </div>
+
+            <div class="mobileMenuToggle d-md-none col" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+           
+            <div id="searchColumn-desktop" class="col-md-3  d-none d-md-block">
+              <a class="submit-button umb_pillbutton" href="submit.html">Submit your story</a>
+              <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
+                <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
+              </form>
+            </div>
+          </div>
+       
+      </div><!-- close div#elmBranding -->
+
+      <!-- Desktop navigation menu -->
+      <nav class="container d-none d-md-block" >
+        <div class="row" id="elmMainNavigation" >
+          <a class="col-md" onclick="toggleTopicsDesktop()" href="javascript:void(0);">Topics</a>
+          <a class="col-md" onclick="toggleSchoolsDesktop()" href="javascript:void(0);">Schools</a>
+          <a class="col-md" href="events.html">Events</a>
+          <a class="col-md" href="social.html">UMB Social</a>
+        </div>
+        <div id="nav-topics" class="secondaryNav row">
+          <a href="elm-stories.html">Elm Stories</a>
+          <a href="voics-and-opinions.html">Voices & Opinions</a>
+          <a href="announcements.html">Announcements</a>
+          <a href="laurels.html">Laurels</a>
+        </div>
+        <div id="nav-schools" class="secondaryNav row">
+          <a href="dentistry.html">Dentistry</a>
+          <a href="graduate.html">Graduate</a>
+          <a href="law.html">Law</a>
+          <a href="medicine.html">Medicine</a>
+          <a href="nursing.html">Nursing</a>
+          <a href="nursing.html">Pharmacy</a>
+          <a href="nursing.html">Social Work</a>
+        </div>
+      </nav>
+
+      <!-- Mobile navigation menu -->
+
+      <nav class="container d-md-none" >
+        <div class="row" id="elmMainNavigation-mobile" >
+          <span>Topics</span>
+          <div class="secondaryNav-mobile">
+            <a href="elm-stories.html">Elm Stories</a>
+            <a href="voics-and-opinions.html">Voices & Opinions</a>
+            <a href="announcements.html">Announcements</a>
+            <a href="laurels.html">Laurels</a>
+          </div>
+          <span>Schools</span>
+          <div class="secondaryNav-mobile">
+            <a href="dentistry.html">Dentistry</a>
+            <a href="graduate.html">Graduate</a>
+            <a href="law.html">Law</a>
+            <a href="medicine.html">Medicine</a>
+            <a href="nursing.html">Nursing</a>
+            <a href="nursing.html">Pharmacy</a>
+            <a href="nursing.html">Social Work</a>
+          </div>
+          <a href="events.html">Events</a>
+          <a href="social.html">UMB Social</a>
+          <a href="submit.html">Submit your story</a>
+          <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
+                <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
+          </form>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- "slider" to go here -->
+
+    <div id="elmMainContent" class="container" >
+<!--*******************************************
+# Start of main content area
+*******************************************-->
+
+      
+
+<!--*******************************************
+# End of main content area
+*******************************************-->
+    </div><!-- close div#elmMainContent -->
+
+    <footer>
+
+      <div id="elmTree-mobile" class="container d-md-none"></div>
+      <div id="elmFooter">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md">
+              <h2>The Elm</h2>
+              <p><strong>Students, faculty, and staff, let your voice be heard!</strong><br />
+              If you’re interested in seeing your writing on the Elm, please lorem 
+              ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="submit.html" class="umb_pillbutton">Submit your story</a> <a href="subscribe.html" class="umb_pillbutton">Subscribe to the Elm Weekly</a></p>
+            </div>
+
+            <div class="col-md">
+              <h3>Keep Reading</h3>
+
+              <div id="elmFooterTopicsSchools" class="row">
+                <div class="col-md">
+                  <h4>Topics</h4>
+                  <a href="elm-stories.html">Elm Stories</a>
+                  <a href="voics-and-opinions.html">Voices & Opinions</a>
+                  <a href="announcements.html">Announcements</a>
+                  <a href="laurels.html">Laurels</a>
+                  <a href="events.html">Events</a>
+                  <a href="social.html">UMB Social</a>
+                </div><div class="col-md">
+                  <h4>Schools</h4>
+                  <a href="dentistry.html">Dentistry</a>
+                  <a href="graduate.html">Graduate</a>
+                  <a href="law.html">Law</a>
+                  <a href="medicine.html">Medicine</a>
+                  <a href="nursing.html">Nursing</a>
+                  <a href="nursing.html">Pharmacy</a>
+                  <a href="nursing.html">Social Work</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="elmCopyright">
+        <div class="container">
+          © 2018 University of Maryland, Baltimore
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="elm-template-assets/js/jquery-3.3.1.min.js" ></script>
+
+   <!-- Bootstrap JavaScript -->
+    <script src="elm-template-assets/bootstrapV4-1-3/bootstrap.min.js" ></script>
+
+    <!-- The Elm template JS -->
+    <script src="elm-template-assets/js/elm-scripts.js" ></script>
+
+  </body>
+</html>
