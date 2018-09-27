@@ -12,6 +12,7 @@ Developed by UMB' communications web team.*/
 # Page footer
 # Full topics feeds
 # Elm stories feeds
+# Voices & Opinions feeds
 
 --------------------------------------------------------------*/
 
@@ -124,6 +125,7 @@ a.elm-all-button {
     font-size: .75rem;
     margin-bottom: 1e;
     float: right;
+    line-height: 1.2;
 }
 
 @media (max-width: 767px) {
@@ -528,4 +530,51 @@ header {
 	background-size: cover;
 	background-position: center 33%;
 	min-height: 7em;
+}
+
+/*--------------------------------------------------------------
+# Voices & Opinions feeds
+--------------------------------------------------------------*/
+
+.elm-voice-op-listing a, .elm-voice-op-listing a:visited {
+	display: block;
+	border: 1px solid #000;
+	padding: 1em;
+	text-decoration: none;
+	color: #000;
+	margin-bottom: 1.5em;
+}
+
+.elm-voice-op-listing a:hover, .elm-voice-op-listing a:active, .elm-voice-op-listing a:focus {
+	color: #599b46;
+	border-color: #599b46;
+}
+
+.elm-voice-op-date {
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}
+
+.elm-voice-op-listing a:hover .elm-voice-op-date, .elm-voice-op-listing a:active .elm-voice-op-date, .elm-voice-op-listing a:focus .elm-voice-op-date {
+	border-color: #599b46;
+}
+
+.elm-voice-op-read-more {
+	float: right;
+}
+
+.elm-voice-op-listing h4 {
+	font-family: georgia, times, "times-new-roman", serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+	.elm-feed-main .elm-feed-listing.elm-voice-op-listing {
+		width: 32%;
+		float: left;
+	}
+	.elm-voice-op-listing #elm-feed-gutter-sizer {
+		width: 2%;
+	}
 }
