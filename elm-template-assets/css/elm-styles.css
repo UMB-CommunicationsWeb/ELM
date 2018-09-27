@@ -13,6 +13,7 @@ Developed by UMB' communications web team.*/
 # Full topics feeds
 # Elm stories feeds
 # Voices & Opinions feeds
+# Laurels feeds
 
 --------------------------------------------------------------*/
 
@@ -411,11 +412,11 @@ header {
 }
 
 #elmTree-mobile {
-		height: 12em;
-		background-image: url(../images/bg-tree.png);
-		background-size: contain;
-        background-position: right bottom;
-        background-repeat: no-repeat;
+	height: 12em;
+	background-image: url(../images/bg-tree.png);
+	background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
 }
 
 #elmCopyright {
@@ -577,4 +578,16 @@ header {
 	.elm-voice-op-listing #elm-feed-gutter-sizer {
 		width: 2%;
 	}
+}
+
+/*--------------------------------------------------------------
+# Laurels feeds
+--------------------------------------------------------------*/
+
+/*Most formatting for Laurel feeds is shared with Elm Stories*/
+
+.elm-stories-image.elm-laurel-placeholder {
+	background-image: url(../images/laurel-icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
