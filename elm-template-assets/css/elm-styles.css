@@ -88,7 +88,8 @@ a {
 }
 
 a.umb_pillbutton, a.umb_pillbutton:visited,
-.elm-feed-filters a, .elm-feed-filters a:visited {
+.elm-feed-filters a, .elm-feed-filters a:visited,
+a.elm-all-button, a.elm-all-button:visited {
 	font-size: .8em;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -112,8 +113,36 @@ a.umb_pillbutton, a.umb_pillbutton:visited,
 }
 
 a.umb_pillbutton:hover, a.umb_pillbutton:focus, a.umb_pillbutton:active,
-.elm-feed-filters a:hover, .elm-feed-filters a:focus, .elm-feed-filters a:active {
+.elm-feed-filters a:hover, .elm-feed-filters a:focus, .elm-feed-filters a:active,
+a.elm-all-button:hover, a.elm-all-button:focus, a.elm-all-button:active {
 	background-color: #599b46;
+}
+
+a.elm-all-button {
+	font-family: "proxima-nova",sans-serif;
+    margin-bottom: 0;
+    font-size: .75rem;
+    margin-bottom: 1e;
+    float: right;
+}
+
+@media (max-width: 767px) {
+	a.elm-all-button::before {
+		content: "View ";
+	}
+	a.elm-all-button, a.elm-all-button:visited {
+		font-size: 100%;
+	    margin: 0;
+	    padding: 0;
+	    padding-left: .5em;
+	    font-weight: 300;
+	    text-transform: none;
+	    background-color: transparent;
+	}
+	a.elm-all-button:active, a.elm-all-button:hover, a.elm-all-button:focus {
+		background-color: transparent;
+		color: #000;
+	}
 }
 
 /*--------------------------------------------------------------
