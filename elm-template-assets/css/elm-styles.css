@@ -14,6 +14,7 @@ Developed by UMB' communications web team.*/
 # Elm stories feeds
 # Voices & Opinions feeds
 # Laurels feeds
+# Featured items (Type A)
 
 --------------------------------------------------------------*/
 
@@ -80,7 +81,7 @@ body {
 }
 
 a {
-	-webkit-transition:  color .25s, background-color .25s;
+	-webkit-transition: color .25s, background-color .25s;
 	transition: color .25s, background-color .25s;
 }
 
@@ -260,6 +261,7 @@ a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
 
 #elmMainNavigation {
 	background-color: #599b46;
+	margin: 0;
 }
 
 #elmMainNavigation a, #elmMainNavigation a:visited {
@@ -324,6 +326,7 @@ a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
 #elmMainNavigation-mobile {
 	background-color: #599b46;
 	display: none;
+	margin: 0;
 }
 
 #elmMainNavigation-mobile a, #elmMainNavigation-mobile a:visited, #elmMainNavigation-mobile span, #elmMainNavigation-mobile form {
@@ -635,4 +638,164 @@ header {
 	background-image: url(../images/laurel-icon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+/*--------------------------------------------------------------
+# Featured items (Type A)
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+	.elm-feature {
+		margin-top: 1.5em;
+	}
+}
+
+.elm-feature-typeA a.elm-feature-typeA-item,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item {
+	text-decoration: none;
+}
+
+.elm-feature-typeA,
+.elm-feature-typeA-mobile {
+	position: relative;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item {
+	position: relative;
+	text-align: center;
+	line-height: 1.25;
+	height: 16em;
+	display: inline-block;
+	width: 16%;
+	margin: 0;
+	margin-right: 1%;
+	float: left;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item,
+.elm-feature-typeA-mobile .elm-feature-typeA-item {
+	background-size: cover;
+	background-position: center 33%;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item:last-of-type {
+	margin-right: 0;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus {
+	width: 49%;
+}
+
+.elm-feature-typeA .elm-featured-title,
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title {
+	color: #fff;
+    text-transform: uppercase;
+}
+
+.elm-feature-typeA .elm-featured-title {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    padding: 1em 0;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    opacity: 1;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus .elm-featured-title {
+	opacity: 0;
+}
+
+.elm-feature-typeA .elm-featured-title-focus,
+.elm-feature-typeA-mobile .elm-feature-focus .elm-featured-title {
+	margin: 0;
+	text-align: left;
+	padding: 1em;
+	font-size: 1.25em;
+	text-transform: none;
+	font-weight: lighter;
+	background-color: rgba( 0, 0, 0, 75%);
+	color: #fff;
+	position: absolute;
+    width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.elm-feature-typeA .elm-featured-title-focus {
+	opacity: 0;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus .elm-featured-title-focus {
+	opacity: 1;
+}
+
+.elm-feature-typeA .elm-featured-title-focus:after,
+.elm-feature-typeA-mobile .elm-feature-focus .elm-featured-title:after {
+	content: "Read more";
+	display: block;
+	font-size: .75em;
+	text-transform: uppercase;
+	color: #599b46;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+.elm-feature-typeA .elm-featured-overlay,
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title {
+	background-color: rgba(	34.9, 60.8, 27.5, 60%);
+}
+
+.elm-feature-typeA .elm-featured-overlay {
+	display: block;
+	height: 16em;
+	width: 100%;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus .elm-featured-overlay {
+	background-color: rgba(	34.9, 60.8, 27.5, 0%);
+}
+
+.elm-feature-typeA a.elm-feature-typeA-item,
+.elm-feature-typeA .elm-featured-overlay,
+.elm-feature-typeA .elm-featured-title,
+.elm-feature-typeA .elm-featured-title-focus {
+	-webkit-transition:  all .25s, opacity 1s, background-color 1s;
+	transition: color all .25s, opacity 1s, background-color 1s;
+}
+
+.elm-feature-typeA-mobile .elm-feature-typeA-item {
+	display: block;
+	margin: 0;
+	position: relative;
+	height: auto;
+	margin-bottom: .5em;
+}
+
+.elm-feature-typeA-mobile .elm-feature-focus {
+	height: 16em;
+}
+
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title {
+	display: block;
+	width: 100%;
+	padding: 1em;
+}
+
+.elm-feature-typeA-mobile a.elm-feature-focus:hover .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-focus:active .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-focus:focus .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item:not(.elm-feature-focus):hover .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item:not(.elm-feature-focus):active .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item:not(.elm-feature-focus):focus .elm-featured-title {
+	background-color: #599b46;
+}
+
+.elm-feature-typeA-mobile a.elm-feature-focus:hover .elm-featured-title:after,
+.elm-feature-typeA-mobile a.elm-feature-focus:active .elm-featured-title:after,
+.elm-feature-typeA-mobile a.elm-feature-focus:focus .elm-featured-title:after {
+	color: #000;
 }

@@ -6,6 +6,7 @@ Developed by UMB' communications web team.*/
 ----------------------------------------------------------------
 
 # Menus
+# Featured items (Type A)
 
 --------------------------------------------------------------*/
 
@@ -33,3 +34,16 @@ function toggleMobileMenu(x) {
     x.classList.toggle('change');
     $('#elmMainNavigation-mobile').slideToggle(menuSpeed);
 }
+
+/*--------------------------------------------------------------
+# Featured items (Type A)
+--------------------------------------------------------------*/
+
+$( ".elm-feature-typeA .elm-feature-typeA-item" ).hover(function() {
+  $( ".elm-feature-typeA .elm-feature-typeA-item" ).removeClass("elm-feature-focus");
+  $( this ).addClass("elm-feature-focus");
+});
+$( ".elm-feature-typeA .elm-feature-typeA-item" ).focus(function() {
+  $( ".elm-feature-typeA .elm-feature-typeA-item" ).removeClass("elm-feature-focus");
+  $( this ).addClass("elm-feature-focus");
+});
