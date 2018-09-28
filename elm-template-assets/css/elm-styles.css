@@ -533,6 +533,51 @@ header {
 	min-height: 7em;
 }
 
+
+/*--------------------------------------------------------------
+# Elm stories LANDING PAGE feeds
+--------------------------------------------------------------*/
+
+.elm-stories-landing {
+	border-bottom: 1px solid #000;
+	margin-bottom: 1em;
+}
+
+.elm-stories-landing a {
+	text-decoration: none;
+    
+}
+
+.elm-stories-landing .elm-stories-date-landing {
+	font-weight: bold;
+    font-size: .8em;
+	display: block;
+    margin-bottom: .5em;
+    color: #000;
+    
+}
+
+.elm-stories-landing h4 {
+	font-family: "proxima-nova",sans-serif;
+}
+
+.elm-stories-landing .elm-stories-blurb-landing {
+	color: #000;
+	margin-bottom: 1.5em;
+	line-height: 1.25;
+    
+}
+
+.elm-stories-landing .elm-stories-image-landing {
+	height: 100%;
+	background-size: cover;
+	background-position: center 33%;
+	min-height: 7em;
+    
+}
+
+
+
 /*--------------------------------------------------------------
 # Voices & Opinions feeds
 --------------------------------------------------------------*/
