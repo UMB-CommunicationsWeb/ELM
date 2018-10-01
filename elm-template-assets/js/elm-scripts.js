@@ -7,6 +7,7 @@ Developed by UMB' communications web team.*/
 
 # Menus
 # Featured items (Type A)
+# Featured items (Type B)
 
 --------------------------------------------------------------*/
 
@@ -43,7 +44,34 @@ $( ".elm-feature-typeA .elm-feature-typeA-item" ).hover(function() {
   $( ".elm-feature-typeA .elm-feature-typeA-item" ).removeClass("elm-feature-focus");
   $( this ).addClass("elm-feature-focus");
 });
+
 $( ".elm-feature-typeA .elm-feature-typeA-item" ).focus(function() {
   $( ".elm-feature-typeA .elm-feature-typeA-item" ).removeClass("elm-feature-focus");
   $( this ).addClass("elm-feature-focus");
+});
+
+/*--------------------------------------------------------------
+# Featured items (Type B)
+--------------------------------------------------------------*/
+
+$( ".elm-feature-typeB .elm-feature-typeB-item" ).hover(function() {
+  $( ".elm-feature-typeB .elm-feature-typeB-item, .elm-feature-typeB .elm-feature-typeB-focus" ).removeClass("elm-feature-focus");
+  var currentSlideIndex = $( ".elm-feature-typeB .elm-feature-typeB-item").index($( this ));
+  $( this ).addClass("elm-feature-focus");
+  $( ".elm-feature-typeB .elm-feature-typeB-focus" ).each(function( index ) {
+     if ($( ".elm-feature-typeB .elm-feature-typeB-focus" ).index($( this )) == currentSlideIndex) {
+      $( this ).addClass("elm-feature-focus");
+     }
+  });
+});
+
+$( ".elm-feature-typeB .elm-feature-typeB-item" ).focus(function() {
+  $( ".elm-feature-typeB .elm-feature-typeB-item, .elm-feature-typeB .elm-feature-typeB-focus" ).removeClass("elm-feature-focus");
+  var currentSlideIndex = $( ".elm-feature-typeB .elm-feature-typeB-item").index($( this ));
+  $( this ).addClass("elm-feature-focus");
+  $( ".elm-feature-typeB .elm-feature-typeB-focus" ).each(function( index ) {
+     if ($( ".elm-feature-typeB .elm-feature-typeB-focus" ).index($( this )) == currentSlideIndex) {
+      $( this ).addClass("elm-feature-focus");
+     }
+  });
 });
