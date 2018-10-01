@@ -536,47 +536,53 @@ header {
 	min-height: 7em;
 }
 
-
 /*--------------------------------------------------------------
-# Elm stories LANDING PAGE feeds
+# UMB NEWS Landing Page Feeds
 --------------------------------------------------------------*/
 
-.elm-stories-landing {
-	border-bottom: 1px solid #000;
-	margin-bottom: 1em;
+.umb-news-listing {
+	margin-bottom: 3em;
 }
 
-.elm-stories-landing a {
+.umb-news-listing a {
 	text-decoration: none;
-    
 }
 
-.elm-stories-landing .elm-stories-date-landing {
+.umb-news-listing .umb-news-date {
 	font-weight: bold;
-    font-size: .8em;
+    font-size: .6em;
 	display: block;
     margin-bottom: .5em;
     color: #000;
-    
 }
 
-.elm-stories-landing h4 {
+.umb-news-listing h4 {
 	font-family: "proxima-nova",sans-serif;
+    margin-top: .8em;
 }
 
-.elm-stories-landing .elm-stories-blurb-landing {
-	color: #000;
-	margin-bottom: 1.5em;
-	line-height: 1.25;
-    
-}
 
-.elm-stories-landing .elm-stories-image-landing {
+.umb-news-listing .umb-news-image {
 	height: 100%;
 	background-size: cover;
 	background-position: center 33%;
-	min-height: 7em;
-    
+}
+
+.umb-news-showMore a, .umb-news-showMore a:visited {
+	display: block;
+	width: 100%;
+	color: #fff;
+    padding: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .6em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    background-color: #599b46;
+}
+
+.umb-news-showMore a:hover, .umb-news-showMore a:active, .umb-news-showMore a:focus {
+	background-color: #386d2d;
 }
 
 
@@ -638,6 +644,27 @@ header {
 	background-image: url(../images/laurel-icon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+/* For the landing page style for Laurels */
+
+.laurel-landing-listing {
+	border-bottom: none;
+	margin-bottom: 1em;
+}
+
+.laurel-landing-listing a {
+	text-decoration: none;
+}
+
+.laurel-landing-listing h4 {
+	font-family: "proxima-nova",sans-serif;
+}
+
+.laurel-landing-listing .elm-stories-blurb {
+	color: #000;
+	margin-bottom: 1.5em;
+	line-height: 1.25;
 }
 
 /*--------------------------------------------------------------
