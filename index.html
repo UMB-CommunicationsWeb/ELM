@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
 
     <!-- Meta tags that are the same for all pages -->
 
@@ -18,11 +18,11 @@
     <!-- Meta tags that will be unique to each page -->
 
     <meta property="og:title" content="The Elm" />
-    <meta property="og:image" content="Image link goes here"/>
+    <meta property="og:image" content="Image link goes here" />
     <meta name="description" content="The Elm is a publication of the University of Maryland, Baltimore (UMB)." />
-    <title>The Elm</title> 
+    <title>The Elm</title>
 
-    <!--Favicon-->      
+    <!--Favicon-->
     <link rel="icon" type="image/png" href="elm-template-assets/images/elm-favicon.png">
 
     <!-- Bootstrap CSS -->
@@ -30,588 +30,605 @@
 
     <!-- The Elm template CSS -->
     <link rel="stylesheet" href="elm-template-assets/css/elm-styles.css" />
-      
+
     <!-- Common Calendar CSS -->
-    <link rel="stylesheet" href="https://calendar.umaryland.edu/media/umb/style-assets/css/Common_Calendar.css" type="text/css"/>
+    <link rel="stylesheet" href="https://calendar.umaryland.edu/media/umb/style-assets/css/Common_Calendar.css" type="text/css" />
 
     <!-- JQuery -->
-    <script src="elm-template-assets/js/jquery-3.3.1.min.js" ></script>
-      
+    <script src="elm-template-assets/js/jquery-3.3.1.min.js"></script>
 
-  </head>
 
-  <body>
+</head>
+
+<body>
 
     <header>
 
-      <div id="elmBranding" class="container" >
-          <div class="row">
-          
-            <div class="col-2" id="davidgeMark"> </div>
+        <div id="elmBranding" class="container">
+            <div class="row">
 
-            <div class="col" id="elmTitleColumn">
-              <span id="elmUMBCallback">The Elm is a publication of <a href="https://www.umaryland.edu/" target="_blank">The University of Maryland, Baltimore</a></span>
+                <div class="col-2" id="davidgeMark"> </div>
 
-              <a id="elmHomepageLink" href="index.html">
-                <h1 id="elmMainTitle">The Elm</h1>
-              </a>
+                <div class="col" id="elmTitleColumn">
+                    <span id="elmUMBCallback">The Elm is a publication of <a href="https://www.umaryland.edu/" target="_blank">The University of Maryland, Baltimore</a></span>
+
+                    <a id="elmHomepageLink" href="index.html">
+                        <h1 id="elmMainTitle">The Elm</h1>
+                    </a>
+                </div>
+
+                <div class="mobileMenuToggle d-md-none col" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div id="searchColumn-desktop" class="col-md-3  d-none d-md-block">
+                    <a class="submit-button umb_pillbutton" href="submit.html">Submit your story</a>
+                    <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
+                        <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
+                    </form>
+                </div>
             </div>
 
-            <div class="mobileMenuToggle d-md-none col" onclick="toggleMobileMenu(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
+        </div><!-- close div#elmBranding -->
+
+        <!-- Desktop navigation menu -->
+        <nav class="container d-none d-md-block">
+            <div class="row" id="elmMainNavigation">
+                <a class="col-md" onclick="toggleTopicsDesktop()" href="javascript:void(0);">Topics</a>
+                <a class="col-md" onclick="toggleSchoolsDesktop()" href="javascript:void(0);">Schools</a>
+                <a class="col-md" href="events.html">Events</a>
+                <a class="col-md" href="social.html">UMB Social</a>
             </div>
-           
-            <div id="searchColumn-desktop" class="col-md-3  d-none d-md-block">
-              <a class="submit-button umb_pillbutton" href="submit.html">Submit your story</a>
-              <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
-                <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
-              </form>
+            <div id="nav-topics" class="secondaryNav row">
+                <a href="elm-stories.html">Elm Stories</a>
+                <a href="voics-and-opinions.html">Voices & Opinions</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="laurels.html">Laurels</a>
             </div>
-          </div>
-       
-      </div><!-- close div#elmBranding -->
+            <div id="nav-schools" class="secondaryNav row">
+                <a href="dentistry.html">Dentistry</a>
+                <a href="graduate.html">Graduate</a>
+                <a href="law.html">Law</a>
+                <a href="medicine.html">Medicine</a>
+                <a href="nursing.html">Nursing</a>
+                <a href="nursing.html">Pharmacy</a>
+                <a href="nursing.html">Social Work</a>
+            </div>
+        </nav>
 
-      <!-- Desktop navigation menu -->
-      <nav class="container d-none d-md-block" >
-        <div class="row" id="elmMainNavigation" >
-          <a class="col-md" onclick="toggleTopicsDesktop()" href="javascript:void(0);">Topics</a>
-          <a class="col-md" onclick="toggleSchoolsDesktop()" href="javascript:void(0);">Schools</a>
-          <a class="col-md" href="events.html">Events</a>
-          <a class="col-md" href="social.html">UMB Social</a>
-        </div>
-        <div id="nav-topics" class="secondaryNav row">
-          <a href="elm-stories.html">Elm Stories</a>
-          <a href="voics-and-opinions.html">Voices & Opinions</a>
-          <a href="announcements.html">Announcements</a>
-          <a href="laurels.html">Laurels</a>
-        </div>
-        <div id="nav-schools" class="secondaryNav row">
-          <a href="dentistry.html">Dentistry</a>
-          <a href="graduate.html">Graduate</a>
-          <a href="law.html">Law</a>
-          <a href="medicine.html">Medicine</a>
-          <a href="nursing.html">Nursing</a>
-          <a href="nursing.html">Pharmacy</a>
-          <a href="nursing.html">Social Work</a>
-        </div>
-      </nav>
+        <!-- Mobile navigation menu -->
 
-      <!-- Mobile navigation menu -->
-
-      <nav class="container d-md-none" >
-        <div class="row" id="elmMainNavigation-mobile" >
-          <span>Topics</span>
-          <div class="secondaryNav-mobile">
-            <a href="elm-stories.html">Elm Stories</a>
-            <a href="voics-and-opinions.html">Voices & Opinions</a>
-            <a href="announcements.html">Announcements</a>
-            <a href="laurels.html">Laurels</a>
-          </div>
-          <span>Schools</span>
-          <div class="secondaryNav-mobile">
-            <a href="dentistry.html">Dentistry</a>
-            <a href="graduate.html">Graduate</a>
-            <a href="law.html">Law</a>
-            <a href="medicine.html">Medicine</a>
-            <a href="nursing.html">Nursing</a>
-            <a href="nursing.html">Pharmacy</a>
-            <a href="nursing.html">Social Work</a>
-          </div>
-          <a href="events.html">Events</a>
-          <a href="social.html">UMB Social</a>
-          <a href="submit.html">Submit your story</a>
-          <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
-                <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
-          </form>
-        </div>
-      </nav>
+        <nav class="container d-md-none">
+            <div class="row" id="elmMainNavigation-mobile">
+                <span>Topics</span>
+                <div class="secondaryNav-mobile">
+                    <a href="elm-stories.html">Elm Stories</a>
+                    <a href="voics-and-opinions.html">Voices & Opinions</a>
+                    <a href="announcements.html">Announcements</a>
+                    <a href="laurels.html">Laurels</a>
+                </div>
+                <span>Schools</span>
+                <div class="secondaryNav-mobile">
+                    <a href="dentistry.html">Dentistry</a>
+                    <a href="graduate.html">Graduate</a>
+                    <a href="law.html">Law</a>
+                    <a href="medicine.html">Medicine</a>
+                    <a href="nursing.html">Nursing</a>
+                    <a href="nursing.html">Pharmacy</a>
+                    <a href="nursing.html">Social Work</a>
+                </div>
+                <a href="events.html">Events</a>
+                <a href="social.html">UMB Social</a>
+                <a href="submit.html">Submit your story</a>
+                <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
+                    <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
+                </form>
+            </div>
+        </nav>
 
     </header>
 
     <!-- Featured items (Type A - Desktop) -->
     <div class="elm-feature elm-feature-typeA container clearfix d-none d-md-block">
-     
-          <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="tsories-single.html">
-            <span class="elm-featured-overlay"></span>
-            <span class="elm-featured-title">Story title goes here</span>
-            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
-          </a>
-          <a class="elm-feature-typeA-item elm-feature-focus" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
-            <span class="elm-featured-overlay"></span>
-            <span class="elm-featured-title">Story title goes here</span>
-            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
-          </a>
-          <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
-            <span class="elm-featured-overlay"></span>
-            <span class="elm-featured-title">Story title goes here</span>
-            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
-          </a>
-          <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
-            <span class="elm-featured-overlay"></span>
-            <span class="elm-featured-title">Story title goes here</span>
-            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
-          </a>
 
-      </div>
+        <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="tsories-single.html">
+            <span class="elm-featured-overlay"></span>
+            <span class="elm-featured-title">Story title goes here</span>
+            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
+        </a>
+        <a class="elm-feature-typeA-item elm-feature-focus" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
+            <span class="elm-featured-overlay"></span>
+            <span class="elm-featured-title">Story title goes here</span>
+            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
+        </a>
+        <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
+            <span class="elm-featured-overlay"></span>
+            <span class="elm-featured-title">Story title goes here</span>
+            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
+        </a>
+        <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
+            <span class="elm-featured-overlay"></span>
+            <span class="elm-featured-title">Story title goes here</span>
+            <span class="elm-featured-title-focus">Story title goes here</span> <!-- A separate title for the "focus" layout -->
+        </a>
+
+    </div>
     </div>
     <!-- End Featured items (Type A - Desktop) -->
 
-     <!-- Featured items (Type A - Mobile) -->
+    <!-- Featured items (Type A - Mobile) -->
     <div class="elm-feature elm-feature-typeA-mobile container clearfix  d-md-none">
-     
-          <a class="elm-feature-typeA-item elm-feature-focus" style="background-image: url('placeholder2.jpg');" href="tsories-single.html">
-            <span class="elm-featured-title">Story title goes here</span>
-          </a>
-          <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
-            <span class="elm-featured-title">Story title goes here</span>
-          </a>
-          <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
-            <span class="elm-featured-title">Story title goes here</span>
-          </a>
-          <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
-            <span class="elm-featured-title">Story title goes here</span>
-          </a>
 
-      </div>
+        <a class="elm-feature-typeA-item elm-feature-focus" style="background-image: url('placeholder2.jpg');" href="tsories-single.html">
+            <span class="elm-featured-title">Story title goes here</span>
+        </a>
+        <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
+            <span class="elm-featured-title">Story title goes here</span>
+        </a>
+        <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
+            <span class="elm-featured-title">Story title goes here</span>
+        </a>
+        <a class="elm-feature-typeA-item" style="background-image: url('placeholder2.jpg');" href="stories-single.html">
+            <span class="elm-featured-title">Story title goes here</span>
+        </a>
+
+    </div>
     </div>
     <!-- End Featured items (Type A - Mobile) -->
 
-    <div id="elmMainContent" class="container" >
-<!--*******************************************
+    <div id="elmMainContent" class="container">
+        <!--*******************************************
 # Start of main content area
-*******************************************-->        
-        
-   
-      
-<!--*******************************************
+*******************************************-->
+
+
+
+        <!--*******************************************
 # Left Hand Column
 *******************************************-->
-        
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            
-<!-- #UMB NEWS SECTION -->
-            
-<div class="umb-news-listing">
-    <h3><a class="elm-all-button" href="http://www.umaryland.edu/news/" title="All UMB News Stories">All</a>UMB NEWS</h3>
-    <div class="row">
-        <div class="col-4">
-            <span class="umb-news-date">September 26, 2001</span>
-            <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
-        </div>
-        <div class="col-8">
-            <h4>Person's name goes here</h4>
-            <div class="umb-news-showMore"><a href="#">READ MORE AT UMARYLAND.EDU/NEWS</a>
-            </div>
-        </div>
-    </div>
-</div>
-            
-<div class="umb-news-listing umb-news-listing">
-    <div class="row">
-        <div class="col-4">
-            <span class="umb-news-date">September 26, 2001</span>
-            <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
-        </div>
-        <div class="col-8">
-            <h4>Person's name goes here</h4>
-            <div class="umb-news-showMore"><a href="#">READ MORE AT UMARYLAND.EDU/NEWS</a>
-            </div>
-        </div>
-    </div>
-</div>
-            
-<div class="umb-news-listing umb-news-listing">
-    <div class="row">
-        <div class="col-4">
-            <span class="umb-news-date">September 26, 2001</span>
-            <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
-        </div>
-        <div class="col-8">
-            <h4>Person's name goes here</h4>
-            <div class="umb-news-showMore"><a href="#">READ MORE AT UMARYLAND.EDU/NEWS</a>
-            </div>
-        </div>
-    </div>
-</div>
-            
-<div class="umb-news-listing umb-news-listing">
-    <div class="row">
-        <div class="col-4">
-            <span class="umb-news-date">September 26, 2001</span>
-            <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
-        </div>
-        <div class="col-8">
-            <h4>Person's name goes here</h4>
-            <div class="umb-news-showMore"><a href="#">READ MORE AT UMARYLAND.EDU/NEWS</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- #TODAY'S EVENTS SECTION -->
+            <div class="row">
+                <div class="col-md-4">
 
-<div class="common_calendar">
-    <div class="calendar_events">
-                 <h3><a class="elm-all-button" href="#" title="All Today's Events">All</a>TODAY'S EVENTS</h3>
-        <p class="category_header"></p>
-        <div itemscope="" itemtype="http://schema.org/Event" class="event">
-           
-            
-            <div itemscope="" itemtype="http://schema.org/Event" class="event">
-                            <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352045&amp;timestamp=1538046000&amp;"><span class="date_box">
-                              <span class="day">27</span><span class="month">Sep</span>
-                            </span></a>
+                    <!-- #UMB NEWS SECTION -->
 
-                            <meta itemprop="startDate" content="2018-09-27">
+                    <div class="umb-news-landing">
+                        <div class="umb-news-listing">
+                            <h3><a class="elm-all-button" href="http://www.umaryland.edu/news/" title="All UMB News Stories">All</a>UMB NEWS</h3>
+                            <a href="http://www.umaryland.edu/news/">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <span class="umb-news-date">September 26, 2001</span>
+                                        <h4>Person's name goes here</h4>
+                                        <span class="umb-news-showMore">Read More</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <div class="event_details">
-                              <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352045&amp;timestamp=1538046000&amp;">
-                                    "From Big Data to Big Decisions: Using Data to Collaborate and Improve Care"
-                                </a></span>
-                                <span class="eventdatetimeplace">7 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
-                        <meta itemprop="name" content="Helrich Conference Room, S11B07">
-                        <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">Helrich Conference Room, S11B07</span>
-                        <meta itemprop="addressLocality" content="Baltimore">
-                        <meta itemprop="addressRegion" content="MD">
-                        </span>
-                        </span>
-                         </span>
-                         <span class="description" itemprop="description">
-                                Department of Anesthesiology Grand Rounds.
-                            </span>
+                        <div class="umb-news-listing">
+                            <a href="http://www.umaryland.edu/news/">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <span class="umb-news-date">September 26, 2001</span>
+                                        <h4>Person's name goes here</h4>
+                                        <span class="umb-news-showMore">Read More</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-                         </div> 
+                        <div class="umb-news-listing">
+                            <a href="http://www.umaryland.edu/news/">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <span class="umb-news-date">September 26, 2001</span>
+                                        <h4>Person's name goes here</h4>
+                                        <span class="umb-news-showMore">Read More</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-                      </div>    <div itemscope="" itemtype="http://schema.org/Event" class="event">
-                            <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.354231&amp;timestamp=1538049600&amp;"><span class="date_box">
-                              <span class="day">27</span><span class="month">Sep</span>
-                            </span></a>
+                        <div class="umb-news-listing">
+                            <a href="http://www.umaryland.edu/news/">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="umb-news-image" style="background-image: url('placeholder.jpg');"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <span class="umb-news-date">September 26, 2001</span>
+                                        <h4>Person's name goes here</h4>
+                                        <span class="umb-news-showMore">Read More</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-                            <meta itemprop="startDate" content="2018-09-27">
+                    </div> <!-- END OF UMB NEWS LANDING DIV -->
 
-                            <div class="event_details">
-                              <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.354231&amp;timestamp=1538049600&amp;">
-                                    Training Course on Real-World Data
-                                </a></span>
-                                <span class="eventdatetimeplace">8 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
-                        <meta itemprop="name" content="Pharmacy Hall">
-                        <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">Pharmacy Hall</span>
-                        <meta itemprop="addressLocality" content="Baltimore">
-                        <meta itemprop="addressRegion" content="MD">
-                        </span>
-                        </span>
-                         </span>
-                         <span class="description" itemprop="description">
-                                Register to attend the two-day (Sept. 27-28) Training Course on Real-World Data
-                            </span>
+                    <!-- #TODAY'S EVENTS SECTION -->
 
-                         </div> 
+                    <div class="common_calendar">
+                        <div class="calendar_events">
+                            <h3><a class="elm-all-button" href="#" title="All Today's Events">All</a>TODAY'S EVENTS</h3>
+                            <p class="category_header"></p>
+                            <div itemscope="" itemtype="http://schema.org/Event" class="event">
 
-                      </div>    <div itemscope="" itemtype="http://schema.org/Event" class="event">
-                            <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352070&amp;timestamp=1538051400&amp;"><span class="date_box">
-                              <span class="day">27</span><span class="month">Sep</span>
-                            </span></a>
 
-                            <meta itemprop="startDate" content="2018-09-27">
+                                <div itemscope="" itemtype="http://schema.org/Event" class="event">
+                                    <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352045&amp;timestamp=1538046000&amp;"><span class="date_box">
+                                            <span class="day">27</span><span class="month">Sep</span>
+                                        </span></a>
 
-                            <div class="event_details">
-                              <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352070&amp;timestamp=1538051400&amp;">
-                                    Human Trafficking Training for Law Enforcement
-                                </a></span>
-                                <span class="eventdatetimeplace">8:30 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
-                        <meta itemprop="name" content="Allegany College of Maryland 12401 Willowbrook Road, SE Cumberland, MD 21502">
-                        <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">Allegany College of Maryland 12401 Willowbrook Road, SE Cumberland, MD 21502</span>
-                        <meta itemprop="addressLocality" content="Baltimore">
-                        <meta itemprop="addressRegion" content="MD">
-                        </span>
-                        </span>
-                         </span>
-                         <span class="description" itemprop="description">
-                                This seminar will provide valuable information on the identification and investigation of human trafficking.
-                            </span>
+                                    <meta itemprop="startDate" content="2018-09-27">
 
-                         </div> 
+                                    <div class="event_details">
+                                        <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352045&amp;timestamp=1538046000&amp;">
+                                                "From Big Data to Big Decisions: Using Data to Collaborate and Improve Care"
+                                            </a></span>
+                                        <span class="eventdatetimeplace">7 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                                                <meta itemprop="name" content="Helrich Conference Room, S11B07">
+                                                <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">Helrich Conference Room, S11B07</span>
+                                                    <meta itemprop="addressLocality" content="Baltimore">
+                                                    <meta itemprop="addressRegion" content="MD">
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="description" itemprop="description">
+                                            Department of Anesthesiology Grand Rounds.
+                                        </span>
 
-                      </div>    <div itemscope="" itemtype="http://schema.org/Event" class="event">
-                            <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.356647&amp;timestamp=1538056800&amp;"><span class="date_box">
-                              <span class="day">27</span><span class="month">Sep</span>
-                            </span></a>
+                                    </div>
 
-                            <meta itemprop="startDate" content="2018-09-27">
+                                </div>
+                                <div itemscope="" itemtype="http://schema.org/Event" class="event">
+                                    <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.354231&amp;timestamp=1538049600&amp;"><span class="date_box">
+                                            <span class="day">27</span><span class="month">Sep</span>
+                                        </span></a>
 
-                            <div class="event_details">
-                              <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.356647&amp;timestamp=1538056800&amp;">
-                                    J-1 Scholar Orientation
-                                </a></span>
-                                <span class="eventdatetimeplace">10 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
-                        <meta itemprop="name" content="SMC Campus Center, Room 311">
-                        <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">SMC Campus Center, Room 311</span>
-                        <meta itemprop="addressLocality" content="Baltimore">
-                        <meta itemprop="addressRegion" content="MD">
-                        </span>
-                        </span>
-                         </span>
-                         <span class="description" itemprop="description">
-                                This orientation is to assist J-1 scholars with understanding how to maintain their visa status and get better acquainted with the UMB campus.
-                            </span>
+                                    <meta itemprop="startDate" content="2018-09-27">
 
-                         </div> 
+                                    <div class="event_details">
+                                        <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.354231&amp;timestamp=1538049600&amp;">
+                                                Training Course on Real-World Data
+                                            </a></span>
+                                        <span class="eventdatetimeplace">8 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                                                <meta itemprop="name" content="Pharmacy Hall">
+                                                <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">Pharmacy Hall</span>
+                                                    <meta itemprop="addressLocality" content="Baltimore">
+                                                    <meta itemprop="addressRegion" content="MD">
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="description" itemprop="description">
+                                            Register to attend the two-day (Sept. 27-28) Training Course on Real-World Data
+                                        </span>
 
-                      </div>
-            
+                                    </div>
 
-        </div>
-    </div>
-</div>
+                                </div>
+                                <div itemscope="" itemtype="http://schema.org/Event" class="event">
+                                    <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352070&amp;timestamp=1538051400&amp;"><span class="date_box">
+                                            <span class="day">27</span><span class="month">Sep</span>
+                                        </span></a>
 
-        </div><!-- END OF COL-4 -->
-        
-<!--*******************************************
+                                    <meta itemprop="startDate" content="2018-09-27">
+
+                                    <div class="event_details">
+                                        <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.352070&amp;timestamp=1538051400&amp;">
+                                                Human Trafficking Training for Law Enforcement
+                                            </a></span>
+                                        <span class="eventdatetimeplace">8:30 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                                                <meta itemprop="name" content="Allegany College of Maryland 12401 Willowbrook Road, SE Cumberland, MD 21502">
+                                                <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">Allegany College of Maryland 12401 Willowbrook Road, SE Cumberland, MD 21502</span>
+                                                    <meta itemprop="addressLocality" content="Baltimore">
+                                                    <meta itemprop="addressRegion" content="MD">
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="description" itemprop="description">
+                                            This seminar will provide valuable information on the identification and investigation of human trafficking.
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div itemscope="" itemtype="http://schema.org/Event" class="event">
+                                    <a href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.356647&amp;timestamp=1538056800&amp;"><span class="date_box">
+                                            <span class="day">27</span><span class="month">Sep</span>
+                                        </span></a>
+
+                                    <meta itemprop="startDate" content="2018-09-27">
+
+                                    <div class="event_details">
+                                        <span class="eventtitle" itemprop="name"><a itemprop="url" href="http://calendar.umaryland.edu/?month=09&amp;day=27&amp;year=2018&amp;view=fulltext&amp;id=d.en.356647&amp;timestamp=1538056800&amp;">
+                                                J-1 Scholar Orientation
+                                            </a></span>
+                                        <span class="eventdatetimeplace">10 a.m. | <span itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                                                <meta itemprop="name" content="SMC Campus Center, Room 311">
+                                                <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="name">SMC Campus Center, Room 311</span>
+                                                    <meta itemprop="addressLocality" content="Baltimore">
+                                                    <meta itemprop="addressRegion" content="MD">
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="description" itemprop="description">
+                                            This orientation is to assist J-1 scholars with understanding how to maintain their visa status and get better acquainted with the UMB campus.
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- END OF COL-4 -->
+
+                <!--*******************************************
 # Right Hand Column
-*******************************************-->      
-      
-<!-- #ELM STORIES SECTION -->        
-        
-<div class="col-8">
- <div class="elm-stories-listing elm-feed-listing">
-     <h3><a class="elm-all-button" href="elm-stories.html" title="All Elm Stories">All</a>ELM STORIES</h3>
-          <a href="stories-single.html">
-            <div class="row">
-              <div class="col-7">
-                <span class="elm-stories-date">September 15, 2001</span>
-                <h4>Story title goes here</h4>
-                <p class="elm-stories-blurb">An introductory sentence or short paragraph that sums up the story goes here.</p>
-              </div>
-              <div class="col-5">
-                <div class="elm-stories-image" style="background-image: url('placeholder.jpg');" ></div>
-              </div>
-            </div>
-          </a>
-        </div>
+*******************************************-->
 
-        <div class="elm-stories-listing elm-feed-listing">
-          <a href="stories-single.html">
-            <div class="row">
-              <div class="col-7">
-                <span class="elm-stories-date">September 15, 2001</span>
-                <h4>Story title goes here</h4>
-                <p class="elm-stories-blurb">An introductory sentence or short paragraph that sums up the story goes here.</p>
-              </div>
-              <div class="col-5">
-                <div class="elm-stories-image" style="background-image: url('placeholder.jpg');" ></div>
-              </div>
-            </div>
-          </a>
-        </div>
+                <!-- #ELM STORIES SECTION -->
 
-        <div class="elm-stories-listing elm-feed-listing">
-          <a href="stories-single.html">
-            <div class="row">
-              <div class="col-7">
-                <span class="elm-stories-date">September 15, 2001</span>
-                <h4>Story title goes here</h4>
-                <p class="elm-stories-blurb">An introductory sentence or short paragraph that sums up the story goes here.</p>
-              </div>
-              <div class="col-5">
-                <div class="elm-stories-image" style="background-image: url('placeholder.jpg');" ></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        
-<!-- #ANNOUNCEMENTS SECTION -->        
-        
-<div class="elm-stories-listing elm-feed-listing">
-    <h3><a class="elm-all-button" href="#" title="All Annoncements">All</a>ANNOUNCEMENTS</h3>
-    <a href="stories-single.html">
-        <div class="row">
-            <div class="col-12">
-                <span class="elm-stories-date">September 15, 2001</span>
-                <h5>ANNOUNCEMENT TEST IPSUM DOLOR SIT AMET, CONSECTETUE ADIPSCIING IPSUM DOLOR ELIT.</h5>
-            </div>
-        </div>
-    </a>
-</div>
+                <div class="col-md-8">
+                    <div class="elm-stories-landing">
+                        <div class="elm-stories-listing elm-feed-listing">
+                            <h3><a class="elm-all-button" href="elm-stories.html" title="All Elm Stories">All</a>ELM STORIES</h3>
+                            <a href="stories-single.html">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <span class="elm-stories-date">September 15, 2001</span>
+                                        <h4>Story title goes here</h4>
+                                        <p class="elm-stories-blurb">An introductory sentence or short paragraph that sums up the story goes here.</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="elm-stories-image" style="background-image: url('placeholder.jpg');"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-<div class="elm-stories-listing elm-feed-listing">
-    <a href="stories-single.html">
-        <div class="row">
-            <div class="col-12">
-                <span class="elm-stories-date">September 15, 2001</span>
-                <h5>ANNOUNCEMENT TEST IPSUM DOLOR SIT AMET, CONSECTETUE ADIPSCIING IPSUM DOLOR ELIT.</h5>
-            </div>
-        </div>
-    </a>
-</div>
+                        <div class="elm-stories-listing elm-feed-listing">
+                            <a href="stories-single.html">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <span class="elm-stories-date">September 15, 2001</span>
+                                        <h4>Story title goes here</h4>
+                                        <p class="elm-stories-blurb">An introductory sentence or short paragraph that sums up the story goes here.</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="elm-stories-image" style="background-image: url('placeholder.jpg');"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="elm-stories-listing elm-feed-listing">
+                            <a href="stories-single.html">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <span class="elm-stories-date">September 15, 2001</span>
+                                        <h4>Story title goes here</h4>
+                                        <p class="elm-stories-blurb">An introductory sentence or short paragraph that sums up the story goes here.</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="elm-stories-image" style="background-image: url('placeholder.jpg');"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- #ANNOUNCEMENTS SECTION -->
+
+                    <div class="annoucements-landing">
+
+                        <div class="announcement-listing announcement-listing">
+                            <h3><a class="elm-all-button" href="#" title="All Annoncements">All</a>ANNOUNCEMENTS</h3>
+                            <a href="stories-single.html">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="announcement-date">September 15, 2001</span>
+                                        <p class="announcement-blurb">ANNOUNCEMENT TEST IPSUM DOLOR SIT AMET, CONSECTETUE ADIPSCIING IPSUM DOLOR ELIT. ANNOUNCEMENT TEST IPSUM DOLOR SIT AMET, CONSECTETUE ADIPSCIING IPSUM DOLOR ELIT. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="announcement-listing announcement-listing">
+                            <a href="stories-single.html">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="announcement-date">September 15, 2001</span>
+                                        <p class="announcement-blurb">ANNOUNCEMENT TEST IPSUM DOLOR SIT AMET, CONSECTETUE ADIPSCIING IPSUM DOLOR ELIT.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
 
-<div class="elm-stories-listing elm-feed-listing">
-    <a href="stories-single.html">
-        <div class="row">
-            <div class="col-12">
-                <span class="elm-stories-date">September 15, 2001</span>
-                <h5>ANNOUNCEMENT TEST IPSUM DOLOR SIT AMET, CONSECTETUE ADIPSCIING IPSUM DOLOR ELIT.</h5>
-            </div>
-        </div>
-    </a>
-</div>
-        
-<!-- #VOICES AND OPINIONS SECTION -->  
-        
-<h3><a class="elm-all-button" href="voices-and-opinions.html" title="All Voices and Opinions">All</a>VOICES AND OPINIONS</h3>
+                        <div class="announcement-listing announcement-listing">
+                            <a href="stories-single.html">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="announcement-date">September 15, 2001</span>
+                                        <p class="announcement-blurb">ANNOUNCEMENT TEST IPSUM DOLOR SIT AMET, CONSECTETUE ADIPSCIING IPSUM DOLOR ELIT. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-<div class="row">
-        <div class="col-6">
-    <div class="elm-voice-op-listing elm-feed-listing">
-        <a href="stories-single.html">
-            <p class="elm-voice-op-date">September 26, 2001 <span class="elm-voice-op-read-more">Read Story</span></p>
-            <h4>&ldquo;Story title goes here&rdquo;</h4>
-            <p>An introductory sentence or short paragraph that sums up the story goes here.</p>
-        </a>
-    </div>
-    <div class="elm-voice-op-listing elm-feed-listing">
-        <a href="stories-single.html">
-            <p class="elm-voice-op-date">September 26, 2001 <span class="elm-voice-op-read-more">Read Story</span></p>
-            <h4>&ldquo;Story title goes here&rdquo;</h4>
-            <p>An introductory sentence or short paragraph that sums up the story goes here.</p>
-        </a>
-    </div>
+                    </div>
 
-</div>
+                    <!-- #VOICES AND OPINIONS SECTION -->
 
-<div class="col-6">
-    <div class="elm-voice-op-listing elm-feed-listing">
-        <a href="stories-single.html">
-            <p class="elm-voice-op-date">September 26, 2001 <span class="elm-voice-op-read-more">Read Story</span></p>
-            <h4>&ldquo;Story title goes here that keeps extending to show a third aspect to the voices and opinions section&rdquo;</h4>
-            <p>An introductory sentence or short paragraph that sums up the story goes here.</p>
-        </a>
-    </div>
-</div>
-    </div>
-        
-<!-- #LAURELS SECTION -->
-<div class="laurel-landing-listing elm-feed-listing">
-    <h3><a class="elm-all-button" href="laurels.html" title="All Laurels">All</a>LAURELS</h3>
-    <div class="row">
+                    <div class="voices-landing">
+                        <h3><a class="elm-all-button" href="voices-and-opinions.html" title="All Voices and Opinions">All</a>VOICES AND OPINIONS</h3>
 
-        <div class="col-4">
-            <a href="stories-single.html">
-                <h4>Kristen Bowes</h4>
-                <p class="elm-stories-blurb">Hygenie Director honored the 9th annual "6th Dental Hygenienst You Want To Know" list.</p>
-            </a>
-        </div>
-        <div class="col-4">
-            <a href="stories-single.html">
-                <h4>Jonah Penne</h4>
-                <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
-            </a>
-        </div>
-        <div class="col-4">
-            <a href="stories-single.html">
-                <h4>Amir Chamsaz</h4>
-                <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
-            </a>
-        </div>
-        <div class="col-4">
-            <a href="stories-single.html">
-                <h4>Brandond Desiderio</h4>
-                <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
-            </a>
-        </div>
-        <div class="col-4">
-            <a href="stories-single.html">
-                <h4>Micah Murphy</h4>
-                <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
-            </a>
-        </div>
-        <div class="col-4">
-            <h4>UMB is proud of all its Laurel recipients!</h4>
-            <div class="elm-feed-showMore">
-                <a href="laurels.html">READ THE FULL LIST</a>
-            </div>
-        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="elm-voice-op-listing elm-feed-listing">
+                                    <a href="stories-single.html">
+                                        <p class="elm-voice-op-date">September 26, 2001 <span class="elm-voice-op-read-more">Read Story</span></p>
+                                        <h4>&ldquo;Story title goes here&rdquo;</h4>
+                                        <p>An introductory sentence or short paragraph that sums up the story goes here.</p>
+                                    </a>
+                                </div>
+                                <div class="elm-voice-op-listing elm-feed-listing">
+                                    <a href="stories-single.html">
+                                        <p class="elm-voice-op-date">September 26, 2001 <span class="elm-voice-op-read-more">Read Story</span></p>
+                                        <h4>&ldquo;Story title goes here&rdquo;</h4>
+                                        <p>An introductory sentence or short paragraph that sums up the story goes here.</p>
+                                    </a>
+                                </div>
 
-    </div>
-</div>
-        
-</div> <!-- END OF RIGHT SIDE COL-8 -->
-</div> <!-- END OF MAIN ROW -->
-</div><!-- END OF MAIN CONTAINER -->
-        
+                            </div>
 
-<!-- Masonry JavaScript - Only include for content modules that use Masonry -->
-<script src="elm-template-assets/js/masonry.pkgd.min.js"></script>
-<script src="elm-template-assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="elm-template-assets/js/elm-masonry-initializer.js"></script>
-<!--*******************************************
+                            <div class="col-lg-6">
+                                <div class="elm-voice-op-listing elm-feed-listing">
+                                    <a href="stories-single.html">
+                                        <p class="elm-voice-op-date">September 26, 2001 <span class="elm-voice-op-read-more">Read Story</span></p>
+                                        <h4>&ldquo;Story title goes here that keeps extending to show a third aspect to the voices and opinions section&rdquo;</h4>
+                                        <p>An introductory sentence or short paragraph that sums up the story goes here.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #LAURELS SECTION -->
+                    <div class="laurel-landing-listing elm-feed-listing">
+                        <h3><a class="elm-all-button" href="laurels.html" title="All Laurels">All</a>LAURELS</h3>
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <a href="stories-single.html">
+                                    <h4>Kristen Bowes</h4>
+                                    <p class="elm-stories-blurb">Hygenie Director honored the 9th annual "6th Dental Hygenienst You Want To Know" list.</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="stories-single.html">
+                                    <h4>Jonah Penne</h4>
+                                    <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="stories-single.html">
+                                    <h4>Amir Chamsaz</h4>
+                                    <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="stories-single.html">
+                                    <h4>Brandond Desiderio</h4>
+                                    <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="stories-single.html">
+                                    <h4>Micah Murphy</h4>
+                                    <p class="elm-stories-blurb">A summary of this person's laurel goes here.</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>UMB is proud of all its Laurel recipients!</h4>
+                                <div class="elm-feed-showMore">
+                                    <a href="laurels.html">READ THE FULL LIST</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div> <!-- END OF RIGHT SIDE COL-8 -->
+            </div> <!-- END OF MAIN ROW -->
+
+
+        <!-- Masonry JavaScript - Only include for content modules that use Masonry -->
+        <script src="elm-template-assets/js/masonry.pkgd.min.js"></script>
+        <script src="elm-template-assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="elm-template-assets/js/elm-masonry-initializer.js"></script>
+        <!--*******************************************
 # End of main content area
 *******************************************-->
     </div><!-- close div#elmMainContent -->
 
     <footer>
 
-      <div id="elmTree-mobile" class="container d-md-none"></div>
-      <div id="elmFooter">
-        <div class="container">
-          <div class="row">
+        <div id="elmTree-mobile" class="container d-md-none"></div>
+        <div id="elmFooter">
+            <div class="container">
+                <div class="row">
 
-            <div class="col-md">
-              <h2>The Elm</h2>
-              <p><strong>Students, faculty, and staff, let your voice be heard!</strong><br />
-              If you’re interested in seeing your writing on the Elm, please lorem 
-              ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p><a href="submit.html" class="umb_pillbutton">Submit your story</a> <a href="subscribe.html" class="umb_pillbutton">Subscribe to the Elm Weekly</a></p>
-            </div>
+                    <div class="col-md">
+                        <h2>The Elm</h2>
+                        <p><strong>Students, faculty, and staff, let your voice be heard!</strong><br />
+                            If you’re interested in seeing your writing on the Elm, please lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><a href="submit.html" class="umb_pillbutton">Submit your story</a> <a href="subscribe.html" class="umb_pillbutton">Subscribe to the Elm Weekly</a></p>
+                    </div>
 
-            <div class="col-md">
-              <h3>Keep Reading</h3>
+                    <div class="col-md">
+                        <h3>Keep Reading</h3>
 
-              <div id="elmFooterTopicsSchools" class="row">
-                <div class="col-md">
-                  <h4>Topics</h4>
-                  <a href="elm-stories.html">Elm Stories</a>
-                  <a href="voics-and-opinions.html">Voices & Opinions</a>
-                  <a href="announcements.html">Announcements</a>
-                  <a href="laurels.html">Laurels</a>
-                  <a href="events.html">Events</a>
-                  <a href="social.html">UMB Social</a>
-                </div><div class="col-md">
-                  <h4>Schools</h4>
-                  <a href="dentistry.html">Dentistry</a>
-                  <a href="graduate.html">Graduate</a>
-                  <a href="law.html">Law</a>
-                  <a href="medicine.html">Medicine</a>
-                  <a href="nursing.html">Nursing</a>
-                  <a href="nursing.html">Pharmacy</a>
-                  <a href="nursing.html">Social Work</a>
+                        <div id="elmFooterTopicsSchools" class="row">
+                            <div class="col-md">
+                                <h4>Topics</h4>
+                                <a href="elm-stories.html">Elm Stories</a>
+                                <a href="voics-and-opinions.html">Voices & Opinions</a>
+                                <a href="announcements.html">Announcements</a>
+                                <a href="laurels.html">Laurels</a>
+                                <a href="events.html">Events</a>
+                                <a href="social.html">UMB Social</a>
+                            </div>
+                            <div class="col-md">
+                                <h4>Schools</h4>
+                                <a href="dentistry.html">Dentistry</a>
+                                <a href="graduate.html">Graduate</a>
+                                <a href="law.html">Law</a>
+                                <a href="medicine.html">Medicine</a>
+                                <a href="nursing.html">Nursing</a>
+                                <a href="nursing.html">Pharmacy</a>
+                                <a href="nursing.html">Social Work</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md">
+                    </div>
+
                 </div>
-              </div>
-
             </div>
-
-            <div class="col-md">
+        </div>
+        <div id="elmCopyright">
+            <div class="container">
+                © 2018 University of Maryland, Baltimore
             </div>
-
-          </div>
         </div>
-      </div>
-      <div id="elmCopyright">
-        <div class="container">
-          © 2018 University of Maryland, Baltimore
-        </div>
-      </div>
     </footer>
 
-   <!-- Bootstrap JavaScript -->
-    <script src="elm-template-assets/bootstrapV4-1-3/bootstrap.min.js" ></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="elm-template-assets/bootstrapV4-1-3/bootstrap.min.js"></script>
 
     <!-- The Elm template JS -->
-    <script src="elm-template-assets/js/elm-scripts.js" ></script>
+    <script src="elm-template-assets/js/elm-scripts.js"></script>
 
-  </body>
+</body>
+
 </html>

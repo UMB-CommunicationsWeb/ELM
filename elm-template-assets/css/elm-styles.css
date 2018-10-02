@@ -504,6 +504,10 @@ header {
 # Elm stories feeds
 --------------------------------------------------------------*/
 
+.elm-stories-landing{
+    margin-bottom: 4em;
+}
+
 .elm-stories-listing {
 	border-bottom: 1px solid #000;
 	margin-bottom: 1em;
@@ -541,8 +545,11 @@ header {
 # UMB NEWS Landing Page Feeds
 --------------------------------------------------------------*/
 
+.umb-news-landing{
+    margin-bottom: 4em;
+}
 .umb-news-listing {
-	margin-bottom: 3em;
+	margin-bottom: 1.5em;
 }
 
 .umb-news-listing a {
@@ -551,7 +558,7 @@ header {
 
 .umb-news-listing .umb-news-date {
 	font-weight: bold;
-    font-size: .6em;
+    font-size: 1em;
 	display: block;
     margin-bottom: .5em;
     color: #000;
@@ -563,34 +570,73 @@ header {
 }
 
 
-.umb-news-listing .umb-news-image {
+.umb-news-listing .umb-news-image{
 	height: 100%;
 	background-size: cover;
 	background-position: center 33%;
+    min-height: 7em;
 }
 
-.umb-news-showMore a, .umb-news-showMore a:visited {
+.umb-news-showMore , .umb-news-showMore:visited {
 	display: block;
 	width: 100%;
 	color: #fff;
     padding: .5em;
     text-decoration: none;
+    text-align: center;
     text-transform: uppercase;
-    font-size: .6em;
+    font-size: .8em;
     font-weight: bold;
     letter-spacing: .1em;
     background-color: #599b46;
 }
 
-.umb-news-showMore a:hover, .umb-news-showMore a:active, .umb-news-showMore a:focus {
+.umb-news-showMore:hover,  .umb-news-showMore:active,  .umb-news-showMore:focus {
 	background-color: #386d2d;
 }
 
 
 
 /*--------------------------------------------------------------
+# ANNOUNCEMENTS Landing Page Feeds
+--------------------------------------------------------------*/
+.annoucements-landing{
+    margin-bottom: 4em;
+}
+
+.announcement-listing {
+	border-bottom: 1px solid #000;
+	margin-bottom: 1em;
+}
+
+.announcement-listing a {
+	text-decoration: none;
+}
+
+.announcement-listing .announcement-date {
+	font-weight: bold;
+	display: block;
+    margin-bottom: .5em;
+    color: #000;
+}
+
+.announcement-listing h4 {
+	font-family: "proxima-nova",sans-serif;
+}
+
+.announcement-listing .announcement-blurb {
+	margin-bottom: 1em;
+     text-transform: uppercase;
+	line-height: 1.25;
+}
+
+/*--------------------------------------------------------------
 # Voices & Opinions feeds
 --------------------------------------------------------------*/
+
+.voices-landing{
+    margin-bottom: 4em;
+}
 
 .elm-voice-op-listing a, .elm-voice-op-listing a:visited {
 	display: block;
