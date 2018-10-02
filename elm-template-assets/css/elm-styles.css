@@ -16,6 +16,7 @@ Developed by UMB' communications web team.*/
 # Laurels feeds
 # Featured items (Type A)
 # Featured items (Type B)
+# Featured items (Type C)
 
 --------------------------------------------------------------*/
 
@@ -284,6 +285,7 @@ a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
 .secondaryNav {
 	display:none;
 	border-bottom: 1em solid #599b46;
+	margin: 0;
 }
 
 .secondaryNav a, .secondaryNav a:visited {
@@ -831,7 +833,16 @@ header {
 .elm-feature-typeA-mobile a.elm-feature-focus:hover .elm-featured-title:after,
 .elm-feature-typeA-mobile a.elm-feature-focus:active .elm-featured-title:after,
 .elm-feature-typeA-mobile a.elm-feature-focus:focus .elm-featured-title:after {
-	color: #000;
+	color: #fff;
+}
+
+
+.elm-feature-typeA-mobile a.elm-feature-focus .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-focus .elm-featured-title:after,
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title
+ {
+	-webkit-transition:  all .25s;
+	transition: color all .25s;
 }
 
 /*--------------------------------------------------------------
@@ -943,5 +954,102 @@ header {
 .elm-feature-typeB a.elm-feature-typeB-focus .elm-featured-title,
 .elm-feature-typeB a.elm-feature-typeB-item .elm-featured-overlay {
 	-webkit-transition:  all .25s, opacity 1s;
-	transition: color all .25s, opacity 1s;
+	transition: all .25s, opacity 1s;
+}
+
+/*--------------------------------------------------------------
+# Featured items (Type C)
+--------------------------------------------------------------*/
+
+.elm-feature-typeC .elm-feature-typeC-item {
+	height: 16em;
+	display: block;	
+	background-size: cover;
+	background-position: center 33%;
+	float: left;
+	margin: 0;
+	margin-bottom: .5em;
+	position: relative;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item .elm-featured-title {
+    display:block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 1em;
+    line-height: 1.25;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type {
+	width: 33%;
+	margin-right: 1%;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type .elm-featured-title {
+	background-color: rgba( 34.9, 60.8, 27.5, 85%);
+}
+
+.elm-feature-typeC a.elm-feature-typeC-item:first-of-type:hover .elm-featured-title,
+.elm-feature-typeC a.elm-feature-typeC-item:first-of-type:focus .elm-featured-title {
+	background-color: #599b46;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type .elm-featured-headline {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type .elm-featured-blurb {
+	display: block;
+	margin: .5em 0;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:last-of-type {
+	width: 66%;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:last-of-type .elm-featured-title {
+	background-color: rgba( 0, 0, 0, 75%);
+	font-size: 1.25em;
+    font-weight: lighter;
+}
+
+.elm-feature-typeC a.elm-feature-typeC-item:last-of-type:hover .elm-featured-title,
+.elm-feature-typeC a.elm-feature-typeC-item:last-of-type:focus .elm-featured-title {
+	background-color: #599b46;
+}
+
+.elm-feature-typeC a.elm-feature-typeC-item:last-of-type:hover .elm-featured-title:after,
+.elm-feature-typeC a.elm-feature-typeC-item:last-of-type:focus .elm-featured-title:after {
+	color: #fff;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:last-of-type .elm-featured-title:after {
+    content: "Read more";
+    display: block;
+    font-size: .75em;
+    text-transform: uppercase;
+    color: #599b46;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.elm-feature-typeC a.elm-feature-typeC-item .elm-featured-title,
+.elm-feature-typeC a.elm-feature-typeC-item .elm-featured-title:after {
+	-webkit-transition:  all .25s, opacity 1s;
+	transition: all .25s, opacity 1s;
+}
+
+@media (max-width: 767px) {
+	.elm-feature-typeC .elm-feature-typeC-item,
+	.elm-feature-typeC .elm-feature-typeC-item:first-of-type,
+	.elm-feature-typeC .elm-feature-typeC-item:last-of-type {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+	}
 }
