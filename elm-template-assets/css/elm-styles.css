@@ -965,7 +965,6 @@ header {
 	line-height: 1.5;
 }
 
-
 .elm-feature-typeB .elm-feature-typeB-item {
 	height: 7.75em;
 	width: 24%;
@@ -986,7 +985,7 @@ header {
 .elm-feature-typeB a.elm-feature-typeB-item:focus .elm-featured-overlay,
 .elm-feature-typeB a.elm-feature-typeB-item:active .elm-featured-overlay,
 .elm-feature-typeB .elm-feature-typeB-item.elm-feature-focus .elm-featured-overlay  {
-	background-color: rgba(	34.9, 60.8, 27.5, 95%);
+	background-color: rgba(89, 155, 70, 90%);
 }
 
 .elm-feature-typeB .elm-feature-typeB-item .elm-featured-title {
