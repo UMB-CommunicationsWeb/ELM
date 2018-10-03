@@ -597,7 +597,13 @@ header {
 	background-color: #386d2d;
 }
 
+/*--------------------------------------------------------------
+# COMMON CALENDAR Landing Page Feeds
+--------------------------------------------------------------*/
 
+.common-calendar-landing{
+    margin-bottom: 4em;
+}
 
 /*--------------------------------------------------------------
 # ANNOUNCEMENTS Landing Page Feeds
