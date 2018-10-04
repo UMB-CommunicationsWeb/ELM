@@ -1,11 +1,12 @@
-/*The Common calendar stylesheet,
-Modified for the redesigned Elm templates fall 2018*/
+/*The Elm Calendar stylesheet*/
+/*Modified slightly from the existing Common Calendar stylesheet in fall 2018 for the redesigned Elm templates*/
 
 #common_calendar.full_calendar #calendar_column,
 .common_calendar.full_calendar #calendar_column {
 	width:31.914893617021278%;
 	padding-right:1.5em;
 	float: left;
+	font-size: .9em;
 } 
 
 #common_calendar.full_calendar #calendar_events,
@@ -71,6 +72,11 @@ Modified for the redesigned Elm templates fall 2018*/
     font-size: 1.2em;
 }
 
+#common_calendar .category_header:empty,
+.common_calendar .category_header:empty {
+	display: none;
+}
+
 #common_calendar .category_header a,
 .common_calendar .category_header a {
 	text-decoration: none;
@@ -124,6 +130,8 @@ Modified for the redesigned Elm templates fall 2018*/
 	border-radius: 6px;
 	font-size: 85%;
 	border: 0;
+	height: 2rem;
+	padding: .5em 1em;
 }
 
 #common_calendar input[type="submit"]:hover,
@@ -181,7 +189,32 @@ Modified for the redesigned Elm templates fall 2018*/
 #common_calendar #jumptoform select, #common_calendar #searchoptions select,
 .common_calendar #jumptoform select, .common_calendar #searchoptions select {
 	width:auto;
+	height: 2rem;
+	margin-bottom: .2rem;
 }
+
+#common_calendar label,
+.common_calendar label,
+#common_calendar #searchoptions p,
+.common_calendar #searchoptions p {
+	color: #306C2E;
+	font-weight: bold;
+}
+
+
+#common_calendar legend,
+.common_calendar legend
+{
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #a3a3a3;
+	height: 2rem;
+}
+
+#common_calendar input#keywords,
+.common_calendar input#keywords {
+	margin-bottom: 1.5rem;
+}
+
 /* END Search functionality styles */
 
 /* Event box styles */
@@ -291,6 +324,7 @@ Modified for the redesigned Elm templates fall 2018*/
 	max-width: 340px;
 	border: 1px solid #000;
 	margin-bottom: 1em;
+	overflow: hidden;
 }
 
 #common_calendar #calendar_box table,
@@ -395,7 +429,6 @@ Modified for the redesigned Elm templates fall 2018*/
 	background-color: #fff;
 	padding-bottom: 1em;
 	text-align: center;
-	font-size: .8em;
 	max-width: 340px;
 
 }
@@ -481,10 +514,14 @@ a.ical-download-link::before {
 .pagination-page span.current {
 	background-color: #2d6d2a;
 	color: #fff;
+	line-height: 1.25;
+    border: 1px solid #2d6d2a;
 }
 .pagination-page span.current.prev, .pagination-page span.current.next, .pagination-page span.ellipse  {
 	background-color: #DFDFDF;
 	color: #000;
+	border: 1px solid #dee2e6;
+    line-height: 1.25;
 }
 .pagination-page a.page-link {
 	text-decoration: none;

@@ -1003,6 +1003,7 @@ header {
     transform: translate(-50%, -50%);
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .elm-feature-typeB .elm-feature-typeB-focus,
