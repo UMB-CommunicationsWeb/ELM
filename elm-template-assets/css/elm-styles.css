@@ -12,11 +12,15 @@ Developed by UMB' communications web team.*/
 # Page footer
 # Full topics feeds
 # Elm stories feeds
+# UMB NEWS Landing Page Feeds
+# COMMON CALENDAR Landing Page Feeds
+# ANNOUNCEMENTS Landing Page Feeds
 # Voices & Opinions feeds
 # Laurels feeds
 # Featured items (Type A)
 # Featured items (Type B)
 # Featured items (Type C)
+# Find it Fast
 
 --------------------------------------------------------------*/
 
@@ -39,6 +43,7 @@ a, a:visited {
 	text-decoration: underline;
 	color: #599b46;
 }
+
 a:hover, a:focus, a:active {
 	color: #000000;
 }
@@ -70,6 +75,7 @@ a:hover, a:focus, a:active {
 strong {
 	text-transform: uppercase;
 }
+
 
 /*--------------------------------------------------------------
 # General elements
@@ -154,6 +160,23 @@ a.elm-all-button {
 
 .oi:before {
 	font-size: .8em;
+}
+
+.elm-link-image-overlay {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(89,155,70,.6);
+	opacity: 0;
+}
+
+.elm-link-image-overlay {
+	-webkit-transition: opacity .25s;
+	transition: opacity  .25s;
+}
+
+a:hover .elm-link-image-overlay, a:focus .elm-link-image-overlay, a:active .elm-link-image-overlay {
+	opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -484,6 +507,7 @@ header {
     letter-spacing: .1em;
     background-color: #599b46;
     margin-top: 2em;
+    line-height: 1.25;
 }
 
 .elm-feed-showMore a:hover, .elm-feed-showMore a:active, .elm-feed-showMore a:focus {
@@ -575,7 +599,7 @@ header {
 .umb-news-listing h4 {
 	font-family: "proxima-nova",sans-serif;
     margin-top: .8em;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -731,6 +755,7 @@ a.announcement-listing {
 
 .laurel-landing-listing h4 {
 	font-family: "proxima-nova",sans-serif;
+	font-size: 1.25em;
 }
 
 .laurel-landing-listing .elm-stories-blurb {
@@ -1000,14 +1025,14 @@ a.announcement-listing {
 	display: block;
     height: 7.75em;
     width: 100%;
-    background-color: rgba(	34.9, 60.8, 27.5, 60%);
+    background-color: rgba(	89,155,70, 60%);
 }
 
 .elm-feature-typeB a.elm-feature-typeB-item:hover .elm-featured-overlay,
 .elm-feature-typeB a.elm-feature-typeB-item:focus .elm-featured-overlay,
 .elm-feature-typeB a.elm-feature-typeB-item:active .elm-featured-overlay,
 .elm-feature-typeB .elm-feature-typeB-item.elm-feature-focus .elm-featured-overlay  {
-	background-color: rgba(89, 155, 70, 90%);
+	background-color: rgba(0, 0, 0, 75%);
 }
 
 .elm-feature-typeB .elm-feature-typeB-item .elm-featured-title {
@@ -1135,4 +1160,39 @@ a.announcement-listing {
 		margin-right: 0;
 		float: none;
 	}
+}
+
+/*--------------------------------------------------------------
+# Find it Fast
+--------------------------------------------------------------*/
+
+.findit-landing-listing {
+	margin-bottom: 4em;
+}
+
+.findit-listing {
+	float: left;
+	width: 23.5%;
+}
+
+#elm-findit-gutter-sizer {
+	width: 2%;
+}
+
+.findit-listing h4 {
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "proxima-nova",sans-serif;
+}
+
+.findit-listing ul {
+    list-style: none outside none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 1.5em;
+}
+
+.findit-listing a {
+	text-decoration: none;
 }
