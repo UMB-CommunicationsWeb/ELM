@@ -1178,13 +1178,21 @@ a.announcement-listing {
 # Find it Fast
 --------------------------------------------------------------*/
 
+
 .findit-listing {
 	float: left;
-	width: 23.5%;
+	width: 49%;
 }
 
 #elm-findit-gutter-sizer {
 	width: 2%;
+}
+
+
+@media (min-width: 992px) {
+	.findit-listing {
+		width: 23.5%;
+	}
 }
 
 .findit-listing h4 {
