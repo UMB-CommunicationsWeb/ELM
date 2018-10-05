@@ -52,7 +52,7 @@ a:hover, a:focus, a:active {
 	color: #599b46;
 	border-bottom: 3px solid #999999;
 	text-transform: uppercase;
-	margin: .75em 0px .5em 0px;
+	margin: .75em 0px;
 }
 
 @media (max-width: 767px) {
@@ -177,6 +177,10 @@ a.elm-all-button {
 
 a:hover .elm-link-image-overlay, a:focus .elm-link-image-overlay, a:active .elm-link-image-overlay {
 	opacity: 1;
+}
+
+.landing-content-module {
+	margin-bottom: 4rem;
 }
 
 /*--------------------------------------------------------------
@@ -536,10 +540,6 @@ header {
 # Elm stories feeds
 --------------------------------------------------------------*/
 
-.elm-stories-landing{
-    margin-bottom: 4em;
-}
-
 .elm-stories-listing {
 	border-bottom: 1px solid #000;
 	margin-bottom: 1em;
@@ -577,9 +577,6 @@ header {
 # UMB NEWS Landing Page Feeds
 --------------------------------------------------------------*/
 
-.umb-news-landing{
-    margin-bottom: 4em;
-}
 .umb-news-listing {
 	margin-bottom: 1.5em;
 }
@@ -641,16 +638,10 @@ header {
 # COMMON CALENDAR Landing Page Feeds
 --------------------------------------------------------------*/
 
-.common-calendar-landing {
-    margin-bottom: 4em;
-}
 
 /*--------------------------------------------------------------
 # ANNOUNCEMENTS Landing Page Feeds
 --------------------------------------------------------------*/
-.annoucements-landing{
-    margin-bottom: 4em;
-}
 
 .announcement-listing {
 	border-bottom: 1px solid #000;
@@ -683,17 +674,12 @@ a.announcement-listing {
 # Voices & Opinions feeds
 --------------------------------------------------------------*/
 
-.voices-landing{
-    margin-bottom: 4em;
-}
-
 .elm-voice-op-listing a, .elm-voice-op-listing a:visited {
 	display: block;
 	border: 1px solid #000;
 	padding: 1em;
 	text-decoration: none;
 	color: #000;
-	margin-bottom: 1.5em;
 }
 
 .elm-voice-op-listing a:hover, .elm-voice-op-listing a:active, .elm-voice-op-listing a:focus {
@@ -720,14 +706,41 @@ a.announcement-listing {
     font-weight: bold;
 }
 
+.elm-feed-main .elm-feed-listing.elm-voice-op-listing {
+		margin-bottom: 1.5em;
+}
+
 @media (min-width: 992px) {
 	.elm-feed-main .elm-feed-listing.elm-voice-op-listing {
 		width: 32%;
 		float: left;
+		margin-bottom: 2%;
 	}
 	.elm-voice-op-listing #elm-feed-gutter-sizer {
 		width: 2%;
 	}
+}
+
+/*--------------------------------------------------------------
+# Voices & Opinions Landing Page feeds
+--------------------------------------------------------------*/
+
+.voices-landing .elm-voice-op-listing {
+		margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+
+	.voices-landing .elm-voice-op-listing {
+		width: 48.5%;
+		float: left;
+		margin-bottom: 3%;
+	}
+
+	#voices-landing-gutter-sizer {
+		width: 3%;
+	}
+
 }
 
 /*--------------------------------------------------------------
@@ -746,7 +759,6 @@ a.announcement-listing {
 
 .laurel-landing-listing {
 	border-bottom: none;
-	margin-bottom: 4em;
 }
 
 .laurel-landing-listing a {
@@ -1165,10 +1177,6 @@ a.announcement-listing {
 /*--------------------------------------------------------------
 # Find it Fast
 --------------------------------------------------------------*/
-
-.findit-landing-listing {
-	margin-bottom: 4em;
-}
 
 .findit-listing {
 	float: left;
