@@ -21,6 +21,7 @@ Developed by UMB' communications web team.*/
 # Featured items (Type B)
 # Featured items (Type C)
 # Find it Fast
+# Elm stories single
 
 --------------------------------------------------------------*/
 
@@ -395,6 +396,11 @@ header {
 	width: auto;
 	margin-bottom: .5em;
 	margin-right: .25em;
+	background-color: #000;
+}
+
+.elm-on-this-page a.umb_pillbutton:hover, .elm-on-this-page a.umb_pillbutton:focus {
+	background-color: #599b46;
 }
 
 /*--------------------------------------------------------------
@@ -485,6 +491,7 @@ header {
 	line-height: 0;
 	text-align: center;
 	display: none; /*Hide on page load, reveal with JavaScript after scroll down*/
+	z-index: 1;
 }
 
 a#elm-back-to-top:hover, a#elm-back-to-top:focus {
@@ -1246,4 +1253,111 @@ a.announcement-listing {
 
 .findit-listing a {
 	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Elm stories single
+--------------------------------------------------------------*/
+
+.elm-stories-single{
+	margin-bottom: 1em;
+}
+
+.elm-stories-single h4 {
+	font-family: "proxima-nova",sans-serif;
+	text-transform: capitalize;
+}
+
+.elm-stories-single a {
+	text-decoration: none;
+}
+.elm-related-stories a {
+	text-decoration: none;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.elm-stories-single .story-date {
+	font-weight: 300;
+    font-size: .8em;
+	display: inline;
+    color: #000;
+}
+
+.elm-stories-single .story-author {
+	font-weight: 300;
+    font-size: .8em;
+	display: inline;
+    color: #000;
+    border-left: 1px solid #000000;
+    margin-left: .1em;
+	padding-left: .3em;
+}
+
+.elm-stories-single .story-image {
+	float: right;
+	max-width: 35%;
+	margin: 10px 0px 10px 10px;
+}
+
+.elm-related-stories .related-title {
+	border-bottom: 1px solid #999999;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	line-height: 1.25;
+}
+
+.elm-school-tags .school-tag {
+	font-size: .8em;
+	font-weight: 400;
+	border-left: 1px solid #000000;
+	margin-left: .1em;
+	padding-left: .3em;
+}
+
+.elm-school-tags .school-tag:first-of-type{
+	border-left: none;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+
+.elm-school-tags .school-tag a{
+	text-decoration: none;
+}
+
+.elm-stories-single .story-content{
+	margin-top: 1em;
+}
+
+a.elm-submit-box {
+	background-color: #999;
+	margin-top: 2em;
+	display:block;
+	text-decoration: none;
+}
+
+a.elm-submit-box:hover, a.elm-submit-box:focus {
+	background-color: #599b56;
+	text-decoration: none;
+}
+
+.elm-submit-box .submit-title {
+	font-size: 1.5em;
+	font-weight: 600;
+    color: #FFF;
+    padding: 1em 1em 0em 1em;
+    display: inline-block;
+    line-height: 1.3;
+    letter-spacing: .05em;
+	line-height: 1.25;
+	display: block;
+}
+
+.elm-submit-box .submit-subtitle {
+	font-size: 1.2em;
+    color: #FFF;
+    padding: 1em;
+    margin-left: .3em;
+    display: inline-block;
+    text-decoration: none;
 }

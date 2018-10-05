@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
 
     <!-- Meta tags that are the same for all pages -->
 
@@ -18,11 +18,11 @@
     <!-- Meta tags that will be unique to each page -->
 
     <meta property="og:title" content="The Elm" />
-    <meta property="og:image" content="Image link goes here" />
+    <meta property="og:image" content="Image link goes here"/>
     <meta name="description" content="The Elm is a publication of the University of Maryland, Baltimore (UMB)." />
-    <title>The Elm</title>
+    <title>The Elm</title> 
 
-    <!--Favicon-->
+    <!--Favicon-->      
     <link rel="icon" type="image/png" href="elm-template-assets/images/elm-favicon.png">
 
     <!-- Bootstrap CSS -->
@@ -35,129 +35,152 @@
     <link rel="stylesheet" href="elm-template-assets/css/calendar.css" />
 
     <!-- JQuery -->
-    <script src="elm-template-assets/js/jquery-3.3.1.min.js"></script>
+    <script src="elm-template-assets/js/jquery-3.3.1.min.js" ></script>
 
-    <!-- Open Iconic icon library -->
-    <link href="elm-template-assets/css/open-iconic.css" rel="stylesheet">
+  </head>
 
-</head>
+  <body>
 
-<body>
+    <header>
 
-     <a id="top"></a>
-     <header>
+      <div id="elmBranding" class="container" >
+          <div class="row">
+          
+            <div class="col-2" id="davidgeMark"> </div>
 
-        <div id="elmBranding" class="container">
-            <div class="row">
+            <div class="col" id="elmTitleColumn">
+              <span id="elmUMBCallback">The Elm is a publication of <a href="https://www.umaryland.edu/" target="_blank">The University of Maryland, Baltimore</a></span>
 
-                <div class="col-2" id="davidgeMark"> </div>
-
-                <div class="col" id="elmTitleColumn">
-                    <span id="elmUMBCallback">The Elm is a publication of <a href="https://www.umaryland.edu/" target="_blank">The University of Maryland, Baltimore</a></span>
-
-                    <a id="elmHomepageLink" href="index.html">
-                        <h1 id="elmMainTitle">The Elm</h1>
-                    </a>
-                </div>
-
-                <div class="mobileMenuToggle d-md-none col" onclick="toggleMobileMenu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-
-                <div id="searchColumn-desktop" class="col-md-3  d-none d-md-block">
-                    <a class="submit-button umb_pillbutton" href="submit.html">Submit your story</a>
-                    <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
-                        <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
-                    </form>
-                </div>
+              <a id="elmHomepageLink" href="index.html">
+                <h1 id="elmMainTitle">The Elm</h1>
+              </a>
+              <h2 id="elmPageTitle">Subtitle Goes Here</h2>
             </div>
 
-        </div><!-- close div#elmBranding -->
+            <div class="mobileMenuToggle d-md-none col" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+           
+            <div id="searchColumn-desktop" class="col-md-3  d-none d-md-block">
+              <a class="submit-button umb_pillbutton" href="submit.html">Submit your story</a>
+              <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
+                <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
+              </form>
+            </div>
+          </div>
+       
+      </div><!-- close div#elmBranding -->
 
-        <!-- Desktop navigation menu -->
-        <nav class="container d-none d-md-block">
-            <div class="row" id="elmMainNavigation">
-                <a class="col-md" onclick="toggleTopicsDesktop()" href="javascript:void(0);">Topics</a>
-                <a class="col-md" onclick="toggleSchoolsDesktop()" href="javascript:void(0);">Schools</a>
-                <a class="col-md" href="events.html">Events</a>
-                <a class="col-md" href="social.html">UMB Social</a>
-            </div>
-            <div id="nav-topics" class="secondaryNav row">
-                <a href="elm-stories.html">Elm Stories</a>
-                <a href="voics-and-opinions.html">Voices & Opinions</a>
-                <a href="announcements.html">Announcements</a>
-                <a href="laurels.html">Laurels</a>
-            </div>
-            <div id="nav-schools" class="secondaryNav row">
-                <a href="dentistry.html">Dentistry</a>
-                <a href="graduate.html">Graduate</a>
-                <a href="law.html">Law</a>
-                <a href="medicine.html">Medicine</a>
-                <a href="nursing.html">Nursing</a>
-                <a href="nursing.html">Pharmacy</a>
-                <a href="nursing.html">Social Work</a>
-            </div>
-        </nav>
+      <!-- Desktop navigation menu -->
+      <nav class="container d-none d-md-block" >
+        <div class="row" id="elmMainNavigation" >
+          <a class="col-md" onclick="toggleTopicsDesktop()" href="javascript:void(0);">Topics</a>
+          <a class="col-md" onclick="toggleSchoolsDesktop()" href="javascript:void(0);">Schools</a>
+          <a class="col-md" href="events.html">Events</a>
+          <a class="col-md" href="social.html">UMB Social</a>
+        </div>
+        <div id="nav-topics" class="secondaryNav row">
+          <a href="elm-stories.html">Elm Stories</a>
+          <a href="voices-and-opinions.html">Voices & Opinions</a>
+          <a href="announcements.html">Announcements</a>
+          <a href="laurels.html">Laurels</a>
+        </div>
+        <div id="nav-schools" class="secondaryNav row">
+          <a href="dentistry.html">Dentistry</a>
+          <a href="graduate.html">Graduate</a>
+          <a href="law.html">Law</a>
+          <a href="medicine.html">Medicine</a>
+          <a href="nursing.html">Nursing</a>
+          <a href="nursing.html">Pharmacy</a>
+          <a href="nursing.html">Social Work</a>
+        </div>
+      </nav>
 
-        <!-- Mobile navigation menu -->
+      <!-- Mobile navigation menu -->
 
-        <nav class="container d-md-none">
-            <div class="row" id="elmMainNavigation-mobile">
-                <span>Topics</span>
-                <div class="secondaryNav-mobile">
-                    <a href="elm-stories.html">Elm Stories</a>
-                    <a href="voics-and-opinions.html">Voices & Opinions</a>
-                    <a href="announcements.html">Announcements</a>
-                    <a href="laurels.html">Laurels</a>
-                </div>
-                <span>Schools</span>
-                <div class="secondaryNav-mobile">
-                    <a href="dentistry.html">Dentistry</a>
-                    <a href="graduate.html">Graduate</a>
-                    <a href="law.html">Law</a>
-                    <a href="medicine.html">Medicine</a>
-                    <a href="nursing.html">Nursing</a>
-                    <a href="nursing.html">Pharmacy</a>
-                    <a href="nursing.html">Social Work</a>
-                </div>
-                <a href="events.html">Events</a>
-                <a href="social.html">UMB Social</a>
-                <a href="submit.html">Submit your story</a>
-                <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
-                    <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
-                </form>
-            </div>
-        </nav>
+      <nav class="container d-md-none" >
+        <div class="row" id="elmMainNavigation-mobile" >
+          <span>Topics</span>
+          <div class="secondaryNav-mobile">
+            <a href="elm-stories.html">Elm Stories</a>
+            <a href="voics-and-opinions.html">Voices & Opinions</a>
+            <a href="announcements.html">Announcements</a>
+            <a href="laurels.html">Laurels</a>
+          </div>
+          <span>Schools</span>
+          <div class="secondaryNav-mobile">
+            <a href="dentistry.html">Dentistry</a>
+            <a href="graduate.html">Graduate</a>
+            <a href="law.html">Law</a>
+            <a href="medicine.html">Medicine</a>
+            <a href="nursing.html">Nursing</a>
+            <a href="nursing.html">Pharmacy</a>
+            <a href="nursing.html">Social Work</a>
+          </div>
+          <a href="events.html">Events</a>
+          <a href="social.html">UMB Social</a>
+          <a href="submit.html">Submit your story</a>
+          <form class="elm-search-bar" id="cse-search-box" method="get" action="/search-results/" role="search">
+                <input type="text" name="q" id="query" placeholder="Search" title="Search"><button type="submit" id="elm-search-submit"></button>
+          </form>
+        </div>
+      </nav>
 
     </header>
 
-    <a id="main-content"></a>
-    <div id="elmMainContent" class="container">
+    <!-- "slider" to go here -->
+
+    <div id="elmMainContent" class="container" >
 <!--*******************************************
 # Start of main content area
 *******************************************-->
-
-<div class="row"><div class="col-md">
-      <h3>Standard header</h3>
-
-      <p class="umb_lead">Introductory sentence formatting. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-      <p>Integer at sodales tellus. Nulla porttitor nunc sed pharetra facilisis. Cras pellentesque purus id neque consectetur aliquet. Vivamus finibus ut augue vitae tincidunt. Proin sed mi dolor. Nam elementum tincidunt commodo. Donec ut consequat neque. <a href="#">Generic link formatting</a></p>
-
-      <p>Duis euismod mattis pretium. Duis quis orci eleifend, iaculis turpis sagittis, ornare nibh. Aliquam porttitor sodales felis, sed egestas erat rhoncus et. Pellentesque vel mauris nec augue sagittis ultrices id ac sem. In sed mauris tincidunt, scelerisque dolor ac, pellentesque ipsum. Nullam sed tellus in est luctus elementum. Nullam scelerisque neque ut arcu vulputate, nec rhoncus odio congue. Donec sed mauris turpis. Suspendisse a cursus urna, id egestas neque. Morbi id hendrerit purus. Nunc nulla velit, imperdiet ac lectus sed, ultricies porta nisi. Quisque condimentum blandit condimentum. Vivamus condimentum ligula et nisi malesuada ultrices. Cras in consectetur ipsum, vitae gravida lorem. Quisque mattis venenatis imperdiet.</p>
-
-      <h3>Standard header</h3>
-
-      <p>Sed viverra libero nec tortor vestibulum facilisis. Nullam metus lacus, laoreet sit amet mattis a, laoreet non lacus. In hac habitasse platea dictumst. Integer in erat vitae nulla auctor ultricies a a eros. Integer pulvinar scelerisque odio sit amet dignissim. Etiam vel augue quis lectus ornare tincidunt. Nulla nec posuere sem, ut euismod sapien. Nunc lacinia ex sit amet pulvinar scelerisque. Nullam fermentum, leo viverra tempus gravida, mauris leo tincidunt neque, sed interdum nunc tellus vitae dui. Integer et massa a magna consequat tincidunt tristique a nibh. Nam magna dui, luctus ac finibus quis, interdum in nulla. Phasellus fringilla imperdiet sapien et porttitor. Proin suscipit vitae odio ut dapibus. Curabitur molestie sed ligula quis egestas.</p></div>
-
-<!--*******************************************
-# submit story block
-*******************************************-->
-<div class="col-md-4" id="box">
-	<div id="text"><h1 id="elmBranding">
-            Faculty and Staff, Have Your Voices Heard!</h1><br><a id="SubmitStory" href="#">Submit Your Story</a></span><br><br></div></div></div>
+<div class="row">
+  	<div class="col-md-9">
+	  	<div class="elm-stories-single">
+	    	<h4>Lorem ipsum dolor</h4>
+	    	
+	    	<span class="story-date">September 26, 2001</span>
+	    	<span class="story-author">Henry Baskerville</span>
+	    	
+	    	<img class="story-image" src="placeholder.jpg">
+			<p class="umb_lead story-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				
+			<p>Integer at sodales tellus. Nulla porttitor nunc sed pharetra facilisis. Cras pellentesque purus id neque consectetur aliquet. Vivamus finibus ut augue vitae tincidunt. Proin sed mi dolor. Nam elementum tincidunt commodo. Donec ut consequat neque. <a href="#">Generic link formatting</a></p>
+			<p>Duis euismod mattis pretium. Duis quis orci eleifend, iaculis turpis sagittis, ornare nibh. Aliquam porttitor sodales felis, sed egestas erat rhoncus et. Pellentesque vel mauris nec augue sagittis ultrices id ac sem. In sed mauris tincidunt, scelerisque dolor ac, pellentesque ipsum. Nullam sed tellus in est luctus elementum. Nullam scelerisque neque ut arcu vulputate, nec rhoncus odio congue. Donec sed mauris turpis. Suspendisse a cursus urna, id egestas neque. Morbi id hendrerit purus. Nunc nulla velit, imperdiet ac lectus sed, ultricies porta nisi. Quisque condimentum blandit condimentum. Vivamus condimentum ligula et nisi malesuada ultrices. Cras in consectetur ipsum, vitae gravida lorem. Quisque mattis venenatis imperdiet.</p>
+    	</div>
+    	
+		<div class="elm-school-tags">
+			<span class="school-tag"><a href="#">Dentistry</a></span>
+			<span class="school-tag"><a href="#">Social Work</a></span>
+			<span class="school-tag"><a href="#">Law</a></span>
+		</div>
+		
+	</div>
+	
+	<div class="col-md-3">
+			
+			<div class="elm-related-stories">
+				<h3>You Might Like</h3>
+				
+				<span class="related-date">January 26, 2017</span>
+				<div class="related-title"><a href="#">Article text duis euismod mattis pretium.</a></div>
+				
+				<span class="related-date">January 26, 2017</span>
+				<div class="related-title"><a href="#">Article text duis euismod mattis pretium.</a></div>
+				
+				<span class="related-date">January 26, 2017</span>
+				<div class="related-title"><a href="#">Article text duis euismod mattis pretium.</a></div>
+				
+			</div>
+			
+			<a href="#" class="elm-submit-box">
+				<span class="submit-title">Students, faculty, and staff, let your voice be heard!</span>
+				<div class="submit-subtitle">Submit Your Story.</div>
+			</a>
+  	</div>
+  </div>
 
 <!--*******************************************
 # End of main content area
@@ -166,77 +189,68 @@
 
     <footer>
 
-        <a href="#top" title="Back to top" id="elm-back-to-top"><span class="oi" data-glyph="chevron-top"></span></a>
+      <div id="elmTree-mobile" class="container d-md-none"></div>
+      <div id="elmFooter">
+        <div class="container">
+          <div class="row">
 
-        <div id="elmTree-mobile" class="container d-md-none"></div>
-        <div id="elmFooter">
-            <div class="container">
-                <div class="row">
+            <div class="col-md">
+              <h2>The Elm</h2>
+              <p><strong>Students, faculty, and staff, let your voice be heard!</strong><br />
+              If you’re interested in seeing your writing on the Elm, please lorem 
+              ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="submit.html" class="umb_pillbutton">Submit your story</a> <a href="subscribe.html" class="umb_pillbutton">Subscribe to the Elm Weekly</a></p>
+            </div>
 
-                    <div class="col-md">
-                        <h2>The Elm</h2>
-                        <p><strong>Students, faculty, and staff, let your voice be heard!</strong><br />
-                            If you’re interested in seeing your writing on the Elm, please lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="submit.html" class="umb_pillbutton">Submit your story</a> <a href="subscribe.html" class="umb_pillbutton">Subscribe to the Elm Weekly</a></p>
-                    </div>
+            <div class="col-md">
+              <h3>Keep Reading</h3>
 
-                    <div class="col-md">
-                        <h3>Keep Reading</h3>
-
-                        <div id="elmFooterTopicsSchools" class="row">
-                            <div class="col-md">
-                                <h4>Topics</h4>
-                                <a href="elm-stories.html">Elm Stories</a>
-                                <a href="voices-and-opinions.html">Voices & Opinions</a>
-                                <a href="announcements.html">Announcements</a>
-                                <a href="laurels.html">Laurels</a>
-                                <a href="events.html">Events</a>
-                                <a href="social.html">UMB Social</a>
-                            </div>
-                            <div class="col-md">
-                                <h4>Schools</h4>
-                                <a href="dentistry.html">Dentistry</a>
-                                <a href="graduate.html">Graduate</a>
-                                <a href="law.html">Law</a>
-                                <a href="medicine.html">Medicine</a>
-                                <a href="nursing.html">Nursing</a>
-                                <a href="nursing.html">Pharmacy</a>
-                                <a href="nursing.html">Social Work</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md">
-                    </div>
-
+              <div id="elmFooterTopicsSchools" class="row">
+                <div class="col-md">
+                  <h4>Topics</h4>
+                  <a href="elm-stories.html">Elm Stories</a>
+                  <a href="voics-and-opinions.html">Voices & Opinions</a>
+                  <a href="announcements.html">Announcements</a>
+                  <a href="laurels.html">Laurels</a>
+                  <a href="events.html">Events</a>
+                  <a href="social.html">UMB Social</a>
+                </div><div class="col-md">
+                  <h4>Schools</h4>
+                  <a href="dentistry.html">Dentistry</a>
+                  <a href="graduate.html">Graduate</a>
+                  <a href="law.html">Law</a>
+                  <a href="medicine.html">Medicine</a>
+                  <a href="nursing.html">Nursing</a>
+                  <a href="nursing.html">Pharmacy</a>
+                  <a href="nursing.html">Social Work</a>
                 </div>
+              </div>
+
             </div>
-        </div>
-        <div id="elmCopyright">
-            <div class="container">
-                © 2018 University of Maryland, Baltimore
+
+            <div class="col-md">
             </div>
+
+          </div>
         </div>
+      </div>
+      <div id="elmCopyright">
+        <div class="container">
+          © 2018 University of Maryland, Baltimore
+        </div>
+      </div>
     </footer>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="elm-template-assets/bootstrapV4-1-3/bootstrap.min.js"></script>
+   <!-- Bootstrap JavaScript -->
+    <script src="elm-template-assets/bootstrapV4-1-3/bootstrap.min.js" ></script>
 
     <!-- The Elm template JS -->
-    <script src="elm-template-assets/js/elm-scripts.js"></script>
-
-    <!-- Masonry JavaScript -->
-    <script src="elm-template-assets/js/masonry.pkgd.min.js"></script>
-    <script src="elm-template-assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="elm-template-assets/js/elm-masonry-initializer.js"></script>
+    <script src="elm-template-assets/js/elm-scripts.js" ></script>
 
     <!-- The Common Calendar template JS, including Simple Pagination plugin -->
     <script type="text/javascript" src="elm-template-assets/js/simplePagination.js"></script>
     <script type="text/javascript" src="elm-template-assets/js/date_time_formatting.js"></script> 
     <script type="text/javascript" src="elm-template-assets/js/misc-calendar-scripts.js"></script>
 
-</body>
-
+  </body>
 </html>
