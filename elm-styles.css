@@ -1,0 +1,1197 @@
+
+/*Custom formatting for the Elm web templates
+Developed by UMB' communications web team.*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# General typography
+# General elements
+# Page header
+# Page footer
+# Full topics feeds
+# Elm stories feeds
+# Submit Story block
+# Voices & Opinions feeds
+# Laurels feeds
+# Featured items (Type A)
+# Featured items (Type B)
+# Featured items (Type C)
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# General typography
+--------------------------------------------------------------*/
+
+/*Import Typekit (includes the fonts Alternate Gothic and Proxima Nova)*/
+@import url("https://use.typekit.net/bki6cop.css");
+
+body {
+	font-family: "proxima-nova",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "alternate-gothic-no-2-d",sans-serif;
+}
+
+a, a:visited {
+	text-decoration: underline;
+	color: #599b46;
+}
+a:hover, a:focus, a:active {
+	color: #000000;
+}
+
+#elmMainContent h3 {
+	color: #599b46;
+	border-bottom: 3px solid #999999;
+	text-transform: uppercase;
+	margin: .75em 0px .5em 0px;
+}
+
+@media (max-width: 767px) {
+	#elmMainContent h3 {
+		font-family: "proxima-nova",sans-serif;
+		color: #fff;
+		border-bottom: none;
+		background-color: #599b46;
+		padding: .25em .5em;
+	}
+}
+
+.umb_lead {
+	color: #333;
+	font-size: 145%;
+    line-height: 1.3;
+    font-weight: 200;
+}
+
+strong {
+	text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# General elements
+--------------------------------------------------------------*/
+
+html {
+	background-color: #599b46;
+}
+body {
+	background-color: #fff;
+}
+
+a {
+	-webkit-transition: color .25s, background-color .25s;
+	transition: color .25s, background-color .25s;
+}
+
+#elmMainContent {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+a.umb_pillbutton, a.umb_pillbutton:visited,
+.elm-feed-filters a, .elm-feed-filters a:visited,
+a.elm-all-button, a.elm-all-button:visited {
+	font-size: .8em;
+	font-weight: 500;
+	text-transform: uppercase;
+    background-color: #999;
+    color: #FFF;
+    text-decoration: none;
+    padding: .4em 1em;
+    border-radius: .5em;
+    display: inline-block;
+    margin-bottom: 1em;
+    line-height: 1.3;
+    letter-spacing: .05em;
+}
+
+@media (max-width: 767px) {
+	a.umb_pillbutton, .elm-feed-filters a {
+		font-size: 1em;
+		width: 100%;
+		padding: .75em 1em;
+		border-radius: 0;
+	}
+}
+
+a.umb_pillbutton:hover, a.umb_pillbutton:focus, a.umb_pillbutton:active,
+.elm-feed-filters a:hover, .elm-feed-filters a:focus, .elm-feed-filters a:active,
+a.elm-all-button:hover, a.elm-all-button:focus, a.elm-all-button:active {
+	background-color: #599b46;
+}
+
+a.elm-all-button {
+	font-family: "proxima-nova",sans-serif;
+    margin-bottom: 0;
+    font-size: .75rem;
+    margin-bottom: 1e;
+    float: right;
+    line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+	a.elm-all-button::before {
+		content: "View ";
+	}
+	a.elm-all-button, a.elm-all-button:visited {
+		font-size: 100%;
+	    margin: 0;
+	    padding: 0;
+	    padding-left: .5em;
+	    font-weight: 300;
+	    text-transform: none;
+	    background-color: transparent;
+	}
+	a.elm-all-button:active, a.elm-all-button:hover, a.elm-all-button:focus {
+		background-color: transparent;
+		color: #000;
+	}
+}
+
+.oi:before {
+	font-size: .8em;
+}
+
+/*--------------------------------------------------------------
+# Page header
+--------------------------------------------------------------*/
+
+#davidgeMark {
+	max-width: 200px;
+	min-width: 200px;
+	background-image: url(../images/davidge-mark.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 767px) {
+	#davidgeMark {
+		max-width: 100px;
+		min-width: 100px;
+	}
+}
+
+#elmTitleColumn {
+	margin-top: 3em;	
+}
+
+#elmUMBCallback {
+	display: block;
+	font-size: .9em;
+	margin-bottom: 1.25em
+}
+
+#elmUMBCallback a, #elmUMBCallback a:visited {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#elmUMBCallback a:hover, #elmUMBCallback a:focus, #elmUMBCallback a:active {
+	color: #599b46;
+}
+
+a#elmHomepageLink, a#elmHomepageLink:visited {
+	color:#000000;
+	text-decoration: none;
+}
+
+#elmBranding h1, #elmBranding h2 {
+	display:inline-block;
+	line-height: .85;
+}
+
+a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
+	color:#599b46;
+}
+
+#elmMainTitle {
+	font-size: 6em;
+	margin-right: .2em;
+}
+@media (max-width: 767px) {
+	#elmMainTitle {
+		font-size: 4em;
+	}
+}
+
+#elmPageTitle {
+	text-transform: uppercase;
+	color: #454545;
+	font-family: "alternate-gothic-no-1-d",sans-serif;
+	font-size: 3em;
+}
+@media (max-width: 767px) {
+	#elmPageTitle {
+		font-size: 2em;
+	}
+}
+
+#searchColumn-desktop {
+	margin-top: 3em;
+}
+
+.elm-search-bar input#query {
+	border-radius: 0;
+	border: 1px solid #000;
+	padding-left: .5em;
+	color: #000;
+	width: 75%;
+	height: 2em;
+	margin: 0;
+}
+
+.elm-search-bar button#elm-search-submit {
+	width: 20%;
+	margin-left:5%;
+	height: 2em;
+	margin: 0;
+	float: right;
+	background-color: transparent;
+	border: none;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    cursor:pointer;
+}
+
+@media (max-width: 767px) {
+	.elm-search-bar button#elm-search-submit {
+		background-image: url(../images/search-mobile.png);
+	}
+}
+
+#elmMainNavigation {
+	background-color: #599b46;
+	margin: 0;
+}
+
+#elmMainNavigation a, #elmMainNavigation a:visited {
+	color: #fff;
+    display: inline-block;
+    padding: .9em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+#elmMainNavigation a:hover, #elmMainNavigation a:focus, #elmMainNavigation a:active {
+	background-color: #386d2d;
+}
+
+.secondaryNav {
+	display:none;
+	border-bottom: 1em solid #599b46;
+	margin: 0;
+}
+
+.secondaryNav a, .secondaryNav a:visited {
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	padding: .75em;
+}
+
+.secondaryNav a:hover, .secondaryNav a:focus, .secondaryNav a:active {
+	color: #599b46;
+}
+
+.mobileMenuToggle {
+    display: inline-block;
+    cursor: pointer;
+    max-width: 100px;
+    margin-top: 3em;
+}
+
+.mobileMenuToggle .bar1, .mobileMenuToggle .bar2, .mobileMenuToggle .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.mobileMenuToggle.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.mobileMenuToggle.change .bar2 {opacity: 0;}
+
+.mobileMenuToggle.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#elmMainNavigation-mobile {
+	background-color: #599b46;
+	display: none;
+	margin: 0;
+}
+
+#elmMainNavigation-mobile a, #elmMainNavigation-mobile a:visited, #elmMainNavigation-mobile span, #elmMainNavigation-mobile form {
+	color: #fff;
+	text-decoration: none;
+	padding: 1em 1.25rem;
+	display: block;
+	width:100%;
+	font-size: 1.25em;
+	font-weight: bolder;
+}
+
+#elmMainNavigation-mobile a:hover, #elmMainNavigation-mobile a:focus, #elmMainNavigation-mobile a:active {
+	background-color: #386d2d
+}
+
+#elmMainNavigation-mobile .secondaryNav-mobile a {
+	display: inline-block;
+	width: auto;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+header {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+/*--------------------------------------------------------------
+# Page footer
+--------------------------------------------------------------*/
+
+#elmFooter {
+	background-image: url(../images/bg-tree.png);
+	background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: right bottom;
+	padding-bottom: 2em;
+}
+
+@media (max-width: 767px) {
+	#elmFooter {
+		background-image: none;
+		background-color: #599b46;
+		padding: 3em 1.5em;
+		color: #fff;
+	}
+}
+
+#elmFooter h2 {
+	font-size: 4em;
+	line-height: 1;
+}
+
+#elmFooter h4 {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+#elmFooterTopicsSchools a, #elmFooterTopicsSchools a:visited {
+	color: #000;
+	display: block;
+	text-decoration: none;
+}
+
+#elmFooterTopicsSchools a:hover, #elmFooterTopicsSchools a:focus, #elmFooterTopicsSchools a:active {
+	color: #599b46;
+}
+
+@media (max-width: 767px) {
+	#elmFooterTopicsSchools a, #elmFooterTopicsSchools a:visited {
+		color: #fff;
+		display: inline-block;
+		padding: .75em 1.5em .75em 0;
+	}
+
+	#elmFooterTopicsSchools a:hover, #elmFooterTopicsSchools a:focus, #elmFooterTopicsSchools a:active {
+		color: #000;
+	}
+}
+
+#elmFooterTopicsSchools h4 {
+	margin-top: 1em;
+}
+
+#elmTree-mobile {
+	height: 12em;
+	background-image: url(../images/bg-tree.png);
+	background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+#elmCopyright {
+	background-color: #599b46;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: .8em;
+	padding: 1em 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Full topics feeds
+--------------------------------------------------------------*/
+
+.elm-feed-filters {
+	margin-bottom: 1em;
+}
+
+.elm-feed-filters a, .elm-feed-filters a:visited {
+	margin-right: .5em;
+	margin-bottom: .75em;
+}
+
+@media (max-width: 767px) {
+	.elm-feed-filters a, .elm-feed-filters a:visited {
+		width: auto;
+		border-radius: .5em;
+	}
+}
+
+.elm-feed-filters a.active, .elm-feed-filters a.active:visited {
+	background-color: #599b46;
+}
+
+.elm-feed-filters .elm-feed-usertype a, .elm-feed-filters .elm-feed-usertype a:visited {
+	background-color: #3a3a3a;
+}
+
+.elm-feed-filters .elm-feed-usertype a:hover, .elm-feed-filters .elm-feed-usertype a:active, .elm-feed-filters .elm-feed-usertype a:focus {
+	background-color: #599b46;
+}
+
+.elm-feed-showMore a, .elm-feed-showMore a:visited {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+    padding: .9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    background-color: #599b46;
+    margin-top: 2em;
+}
+
+.elm-feed-showMore a:hover, .elm-feed-showMore a:active, .elm-feed-showMore a:focus {
+	background-color: #386d2d;
+}
+
+/*Helps lay out the Masonry grid on full topic feed page*/
+.elm-feed-main .elm-feed-listing {
+	width: 49%;
+	float: left;
+}
+#elm-feed-gutter-sizer {
+	width: 2%;
+}
+@media (max-width: 767px) {
+	.elm-feed-main .elm-feed-listing {
+		width: 100%;
+		float: left;
+	}
+	#elm-feed-gutter-sizer {
+		width: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+# Elm stories feeds
+--------------------------------------------------------------*/
+
+.elm-stories-landing{
+    margin-bottom: 4em;
+}
+
+.elm-stories-listing {
+	border-bottom: 1px solid #000;
+	margin-bottom: 1em;
+}
+
+.elm-stories-listing a {
+	text-decoration: none;
+}
+
+.elm-stories-listing .elm-stories-date {
+	font-weight: bold;
+	display: block;
+    margin-bottom: .5em;
+    color: #000;
+}
+
+.elm-stories-listing h4 {
+	font-family: "proxima-nova",sans-serif;
+}
+
+.elm-stories-listing .elm-stories-blurb {
+	color: #000;
+	margin-bottom: 1.5em;
+	line-height: 1.25;
+}
+
+.elm-stories-listing .elm-stories-image {
+	height: 100%;
+	background-size: cover;
+	background-position: center 33%;
+	min-height: 7em;
+}
+
+/*--------------------------------------------------------------
+# UMB NEWS Landing Page Feeds
+--------------------------------------------------------------*/
+
+.umb-news-landing{
+    margin-bottom: 4em;
+}
+.umb-news-listing {
+	margin-bottom: 1.5em;
+}
+
+.umb-news-listing a {
+	text-decoration: none;
+}
+
+.umb-news-listing .umb-news-date {
+	font-weight: bold;
+    font-size: 1em;
+	display: block;
+    margin-bottom: .5em;
+    color: #000;
+}
+
+.umb-news-listing h4 {
+	font-family: "proxima-nova",sans-serif;
+    margin-top: .8em;
+    font-size: 1.25em;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.umb-news-listing .umb-news-date {
+		margin-top: .5em;
+		margin-bottom: 0;
+	}
+	.umb-news-listing h4 {
+		margin-top: 0;
+	}
+}
+
+.umb-news-listing .umb-news-image{
+	height: 100%;
+	background-size: cover;
+	background-position: center 33%;
+    min-height: 7em;
+}
+
+.umb-news-showMore , .umb-news-showMore:visited {
+	display: block;
+	width: 100%;
+	color: #fff;
+    padding: .5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .75em;
+    letter-spacing: .05em;
+    background-color: #599b46;
+    line-height: 1.25;
+}
+
+.umb-news-listing a:hover .umb-news-showMore,  .umb-news-listing a:active .umb-news-showMore,  .umb-news-listing a:focus .umb-news-showMore {
+	background-color: #386d2d;
+}
+
+/*--------------------------------------------------------------
+# COMMON CALENDAR Landing Page Feeds
+--------------------------------------------------------------*/
+
+.common-calendar-landing {
+    margin-bottom: 4em;
+}
+
+/*--------------------------------------------------------------
+# ANNOUNCEMENTS Landing Page Feeds
+--------------------------------------------------------------*/
+.annoucements-landing{
+    margin-bottom: 4em;
+}
+
+.announcement-listing {
+	border-bottom: 1px solid #000;
+	margin-bottom: 1em;
+}
+
+.announcement-listing a,
+a.announcement-listing {
+	text-decoration: none;
+}
+
+.announcement-listing .announcement-date {
+	font-weight: bold;
+	display: block;
+    margin-bottom: .5em;
+    color: #000;
+}
+
+.announcement-listing h4 {
+	font-family: "proxima-nova",sans-serif;
+}
+
+.announcement-listing .announcement-blurb {
+	margin-bottom: 1em;
+     text-transform: uppercase;
+	line-height: 1.25;
+}
+
+/*--------------------------------------------------------------
+# Voices & Opinions feeds
+--------------------------------------------------------------*/
+
+.voices-landing{
+    margin-bottom: 4em;
+}
+
+.elm-voice-op-listing a, .elm-voice-op-listing a:visited {
+	display: block;
+	border: 1px solid #000;
+	padding: 1em;
+	text-decoration: none;
+	color: #000;
+	margin-bottom: 1.5em;
+}
+
+.elm-voice-op-listing a:hover, .elm-voice-op-listing a:active, .elm-voice-op-listing a:focus {
+	color: #599b46;
+	border-color: #599b46;
+}
+
+.elm-voice-op-date {
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}
+
+.elm-voice-op-listing a:hover .elm-voice-op-date, .elm-voice-op-listing a:active .elm-voice-op-date, .elm-voice-op-listing a:focus .elm-voice-op-date {
+	border-color: #599b46;
+}
+
+.elm-voice-op-read-more {
+	float: right;
+}
+
+.elm-voice-op-listing h4 {
+	font-family: georgia, times, "times-new-roman", serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+	.elm-feed-main .elm-feed-listing.elm-voice-op-listing {
+		width: 32%;
+		float: left;
+	}
+	.elm-voice-op-listing #elm-feed-gutter-sizer {
+		width: 2%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Laurels feeds
+--------------------------------------------------------------*/
+
+/*Most formatting for Laurel feeds is shared with Elm Stories*/
+
+.elm-stories-image.elm-laurel-placeholder {
+	background-image: url(../images/laurel-icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* For the landing page style for Laurels */
+
+.laurel-landing-listing {
+	border-bottom: none;
+	margin-bottom: 4em;
+}
+
+.laurel-landing-listing a {
+	text-decoration: none;
+}
+
+.laurel-landing-listing h4 {
+	font-family: "proxima-nova",sans-serif;
+}
+
+.laurel-landing-listing .elm-stories-blurb {
+	color: #000;
+	line-height: 1.25;
+}
+
+/*--------------------------------------------------------------
+# Story Submit Block
+--------------------------------------------------------------*/
+
+#box {
+display: block;
+min-width: 300px;
+max-width: 500px;
+padding: 60px;
+	position: relative;
+box-sizing: border box;
+}
+
+#box #text {
+min-width: 250px;
+min-height: 200px;
+padding: 15px 30px; 30px 45px;
+	position: relative;
+	text-transform: uppercase;
+	color: #fff;
+	background: #999;
+			border-radius: 0px 5px 30px;
+			box-sizing: border-box;
+}
+
+a#SubmitStory {
+text-align: right;
+padding-right: 20px;
+font-size: 1em;
+letter-spacing: .1em;
+text-decoration: none;
+color: #fff;
+font-weight: bolder;
+font-style: italic;
+}
+
+a:hover#SubmitStory, a:focus#SubmitStory, a:active#SubmitStory {
+	color: #000000;
+}
+
+@media (max-width: 767px) { 
+#box {
+font-size: 1em;
+	position: relative;
+	width: 100%;
+			padding: .75em 1em;
+}
+}
+
+@media (max-width: 767px) { 
+#box #text {
+	position: relative;
+	background: #999;
+	width: auto;
+padding: 15px 0 15px 30px;
+}
+}
+
+/*--------------------------------------------------------------
+# Featured items (Type A)
+--------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+	.elm-feature {
+		margin-top: 1.5em;
+	}
+}
+
+.elm-feature-typeA a.elm-feature-typeA-item,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item {
+	text-decoration: none;
+}
+
+.elm-feature-typeA,
+.elm-feature-typeA-mobile {
+	position: relative;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item {
+	position: relative;
+	text-align: center;
+	line-height: 1.25;
+	height: 16em;
+	display: inline-block;
+	width: 16%;
+	margin: 0;
+	margin-right: 1%;
+	float: left;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item,
+.elm-feature-typeA-mobile .elm-feature-typeA-item {
+	background-size: cover;
+	background-position: center 33%;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item:last-of-type {
+	margin-right: 0;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus {
+	width: 49%;
+}
+
+.elm-feature-typeA .elm-featured-title,
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title {
+	color: #fff;
+    text-transform: uppercase;
+}
+
+.elm-feature-typeA .elm-featured-title {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    padding: 1em 0;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    opacity: 1;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus .elm-featured-title {
+	opacity: 0;
+}
+
+.elm-feature-typeA .elm-featured-title-focus,
+.elm-feature-typeA-mobile .elm-feature-focus .elm-featured-title {
+	margin: 0;
+	text-align: left;
+	padding: 1em;
+	font-size: 1.25em;
+	text-transform: none;
+	font-weight: lighter;
+	background-color: rgba( 0, 0, 0, 75%);
+	color: #fff;
+	position: absolute;
+    width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.elm-feature-typeA a.elm-feature-typeA-item:hover .elm-featured-title-focus,
+.elm-feature-typeA a.elm-feature-typeA-item:active .elm-featured-title-focus,
+.elm-feature-typeA a.elm-feature-typeA-item:focus .elm-featured-title-focus   {
+	background-color: rgba( 0, 0, 0, 100%);
+}
+
+.elm-feature-typeA .elm-featured-title-focus {
+	opacity: 0;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus .elm-featured-title-focus {
+	opacity: 1;
+}
+
+.elm-feature-typeA .elm-featured-title-focus:after,
+.elm-feature-typeA-mobile .elm-feature-focus .elm-featured-title:after {
+	content: "Read more";
+	display: block;
+	font-size: .75em;
+	text-transform: uppercase;
+	color: #599b46;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+.elm-feature-typeA .elm-featured-overlay,
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title {
+	background-color: rgba(	34.9, 60.8, 27.5, 60%);
+}
+
+.elm-feature-typeA .elm-featured-overlay {
+	display: block;
+	height: 16em;
+	width: 100%;
+}
+
+.elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus .elm-featured-overlay {
+	background-color: rgba(	34.9, 60.8, 27.5, 0%);
+}
+
+.elm-feature-typeA a.elm-feature-typeA-item,
+.elm-feature-typeA .elm-featured-overlay,
+.elm-feature-typeA .elm-featured-title,
+.elm-feature-typeA .elm-featured-title-focus {
+	-webkit-transition:  all .25s, opacity 1s, background-color 1s;
+	transition: color all .25s, opacity 1s, background-color 1s;
+}
+
+.elm-feature-typeA-mobile {
+	display: block;
+}
+
+.elm-feature-typeA-mobile .elm-feature-typeA-item {
+	display: block;
+	margin: 0;
+	position: relative;
+	height: auto;
+	margin-bottom: .5em;
+}
+
+.elm-feature-typeA-mobile .elm-feature-focus {
+	height: 16em;
+}
+
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title {
+	display: block;
+	width: 100%;
+	padding: 1em;
+}
+
+.elm-feature-typeA-mobile a.elm-feature-focus:hover .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-focus:active .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-focus:focus .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item:not(.elm-feature-focus):hover .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item:not(.elm-feature-focus):active .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-typeA-item:not(.elm-feature-focus):focus .elm-featured-title {
+	background-color: #599b46;
+}
+
+.elm-feature-typeA-mobile a.elm-feature-focus:hover .elm-featured-title:after,
+.elm-feature-typeA-mobile a.elm-feature-focus:active .elm-featured-title:after,
+.elm-feature-typeA-mobile a.elm-feature-focus:focus .elm-featured-title:after {
+	color: #fff;
+}
+
+
+.elm-feature-typeA-mobile a.elm-feature-focus .elm-featured-title,
+.elm-feature-typeA-mobile a.elm-feature-focus .elm-featured-title:after,
+.elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title
+ {
+	-webkit-transition:  all .25s;
+	transition: color all .25s;
+}
+
+/*--------------------------------------------------------------
+# Featured items (Type B)
+--------------------------------------------------------------*/
+
+.elm-feature-typeB .elm-feature-typeB-focus,
+.elm-feature-typeB .elm-feature-typeB-item {
+	display: block;	
+	background-size: cover;
+	background-position: center 33%;
+	margin-bottom: .5em;
+	float:left;
+	position: relative;
+	line-height: 1.25;
+}
+
+.elm-feature-typeB .elm-feature-typeB-focus-container {
+	display: inline-block;
+	float: left;
+	height: 16em;
+	width: 50%;
+	margin-right: 1%;
+	position: relative;
+	background-color: rgb(34.9, 60.8, 27.5);
+}
+
+.elm-feature-typeB .elm-feature-typeB-focus {
+	height: 16em;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.elm-feature-typeB .elm-feature-typeB-focus.elm-feature-focus {
+	opacity: 1;
+	z-index: 1000;
+}
+
+.elm-feature-typeB a.elm-feature-typeB-focus .elm-featured-title {
+	margin: 0;
+    text-align: left;
+    padding: 1em;
+    font-size: 1.25em;
+    text-transform: none;
+    font-weight: lighter;
+    background-color: rgba( 0, 0, 0, 75%);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.elm-feature-typeB a.elm-feature-typeB-focus:hover .elm-featured-title,
+.elm-feature-typeB a.elm-feature-typeB-focus:active .elm-featured-title,
+.elm-feature-typeB a.elm-feature-typeB-focus:focus .elm-featured-title {
+    background-color: rgba( 0, 0, 0, 100%);
+}
+
+.elm-feature-typeB .elm-feature-typeB-focus .elm-featured-title:after {
+	content: "Read more";
+	display: block;
+	font-size: .75em;
+	text-transform: uppercase;
+	color: #599b46;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+.elm-feature-typeB .elm-feature-typeB-item {
+	height: 7.75em;
+	width: 24%;
+}
+
+.elm-feature-typeB .elm-feature-typeB-item:nth-of-type(odd) {
+	margin-right: 1%;
+}
+
+.elm-feature-typeB a.elm-feature-typeB-item .elm-featured-overlay {
+	display: block;
+    height: 7.75em;
+    width: 100%;
+    background-color: rgba(	34.9, 60.8, 27.5, 60%);
+}
+
+.elm-feature-typeB a.elm-feature-typeB-item:hover .elm-featured-overlay,
+.elm-feature-typeB a.elm-feature-typeB-item:focus .elm-featured-overlay,
+.elm-feature-typeB a.elm-feature-typeB-item:active .elm-featured-overlay,
+.elm-feature-typeB .elm-feature-typeB-item.elm-feature-focus .elm-featured-overlay  {
+	background-color: rgba(89, 155, 70, 90%);
+}
+
+.elm-feature-typeB .elm-feature-typeB-item .elm-featured-title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.elm-feature-typeB .elm-feature-typeB-focus,
+.elm-feature-typeB a.elm-feature-typeB-focus .elm-featured-title,
+.elm-feature-typeB a.elm-feature-typeB-item .elm-featured-overlay {
+	-webkit-transition:  all .25s, opacity 1s;
+	transition: all .25s, opacity 1s;
+}
+
+/*--------------------------------------------------------------
+# Featured items (Type C)
+--------------------------------------------------------------*/
+
+.elm-feature-typeC .elm-feature-typeC-item {
+	height: 16em;
+	display: block;	
+	background-size: cover;
+	background-position: center 33%;
+	float: left;
+	margin: 0;
+	margin-bottom: .5em;
+	position: relative;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item .elm-featured-title {
+    display:block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 1em;
+    line-height: 1.25;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item .elm-featured-overlay {
+    display: block;
+    height: 16em;
+    width: 100%;
+    background-color: rgba(	34.9, 60.8, 27.5, 60%);
+    opacity: 0;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:active .elm-featured-overlay,
+.elm-feature-typeC .elm-feature-typeC-item:hover .elm-featured-overlay,
+.elm-feature-typeC .elm-feature-typeC-item:focus .elm-featured-overlay {
+	opacity: 1;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type {
+	width: 33%;
+	margin-right: 1%;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type .elm-featured-title {
+	background-color: rgba( 34.9, 60.8, 27.5, 85%);
+    padding: 1.25em;
+}
+
+.elm-feature-typeC a.elm-feature-typeC-item:first-of-type:hover .elm-featured-title,
+.elm-feature-typeC a.elm-feature-typeC-item:first-of-type:focus .elm-featured-title {
+	background-color: #599b46;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type .elm-featured-headline {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:first-of-type .elm-featured-blurb {
+	display: block;
+	margin: .5em 0;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:nth-of-type(2) {
+	width: 66%;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:nth-of-type(2) .elm-featured-title {
+	background-color: rgba( 0, 0, 0, 75%);
+	font-size: 1.25em;
+    font-weight: lighter;
+}
+
+.elm-feature-typeC a.elm-feature-typeC-item:nth-of-type(2):hover .elm-featured-title,
+.elm-feature-typeC a.elm-feature-typeC-item:nth-of-type(2):focus .elm-featured-title {
+	background-color: #000;
+}
+
+.elm-feature-typeC .elm-feature-typeC-item:nth-of-type(2) .elm-featured-title:after {
+    content: "Read more";
+    display: block;
+    font-size: .75em;
+    text-transform: uppercase;
+    color: #599b46;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.elm-feature-typeC a.elm-feature-typeC-item .elm-featured-title,
+.elm-feature-typeC a.elm-feature-typeC-item .elm-featured-title:after,
+.elm-feature-typeC .elm-feature-typeC-item .elm-featured-overlay {
+	-webkit-transition:  all .25s;
+	transition: all .25s;
+}
+
+@media (max-width: 767px) {
+	.elm-feature-typeC .elm-feature-typeC-item,
+	.elm-feature-typeC .elm-feature-typeC-item:first-of-type,
+	.elm-feature-typeC .elm-feature-typeC-item:nth-of-type(2) {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+}
