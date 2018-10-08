@@ -837,6 +837,11 @@ a.announcement-listing {
 	position: relative;
 }
 
+.elm-feature-typeA {
+	max-height: 16em;
+	overflow: hidden;
+}
+
 .elm-feature-typeA .elm-feature-typeA-item {
 	position: relative;
 	text-align: center;
@@ -894,7 +899,7 @@ a.announcement-listing {
 	font-size: 1.25em;
 	text-transform: none;
 	font-weight: lighter;
-	background-color: rgba( 0, 0, 0, 75%);
+	background-color: rgba( 0, 0, 0, .75);
 	color: #fff;
 	position: absolute;
     width: 100%;
@@ -905,7 +910,7 @@ a.announcement-listing {
 .elm-feature-typeA a.elm-feature-typeA-item:hover .elm-featured-title-focus,
 .elm-feature-typeA a.elm-feature-typeA-item:active .elm-featured-title-focus,
 .elm-feature-typeA a.elm-feature-typeA-item:focus .elm-featured-title-focus   {
-	background-color: rgba( 0, 0, 0, 100%);
+	background-color: rgba( 0, 0, 0, 1);
 }
 
 .elm-feature-typeA .elm-featured-title-focus {
@@ -929,7 +934,7 @@ a.announcement-listing {
 
 .elm-feature-typeA .elm-featured-overlay,
 .elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title {
-	background-color: rgba(	34.9, 60.8, 27.5, 60%);
+	background-color: rgba(	35, 61, 28, .60);
 }
 
 .elm-feature-typeA .elm-featured-overlay {
@@ -939,7 +944,7 @@ a.announcement-listing {
 }
 
 .elm-feature-typeA .elm-feature-typeA-item.elm-feature-focus .elm-featured-overlay {
-	background-color: rgba(	34.9, 60.8, 27.5, 0%);
+	background-color: rgba(	35, 61, 28, 0);
 }
 
 .elm-feature-typeA a.elm-feature-typeA-item,
@@ -1018,7 +1023,7 @@ a.announcement-listing {
 	width: 50%;
 	margin-right: 1%;
 	position: relative;
-	background-color: rgb(34.9, 60.8, 27.5);
+	background-color: rgb(35, 61, 28);
 }
 
 .elm-feature-typeB .elm-feature-typeB-focus {
@@ -1042,7 +1047,7 @@ a.announcement-listing {
     font-size: 1.25em;
     text-transform: none;
     font-weight: lighter;
-    background-color: rgba( 0, 0, 0, 75%);
+    background-color: rgba( 0, 0, 0, .75);
     color: #fff;
     position: absolute;
     width: 100%;
@@ -1053,7 +1058,7 @@ a.announcement-listing {
 .elm-feature-typeB a.elm-feature-typeB-focus:hover .elm-featured-title,
 .elm-feature-typeB a.elm-feature-typeB-focus:active .elm-featured-title,
 .elm-feature-typeB a.elm-feature-typeB-focus:focus .elm-featured-title {
-    background-color: rgba( 0, 0, 0, 100%);
+    background-color: rgba( 0, 0, 0, 1);
 }
 
 .elm-feature-typeB .elm-feature-typeB-focus .elm-featured-title:after {
@@ -1079,14 +1084,14 @@ a.announcement-listing {
 	display: block;
     height: 7.75em;
     width: 100%;
-    background-color: rgba(	89,155,70, 60%);
+    background-color: rgba(	89,155,70, .60);
 }
 
 .elm-feature-typeB a.elm-feature-typeB-item:hover .elm-featured-overlay,
 .elm-feature-typeB a.elm-feature-typeB-item:focus .elm-featured-overlay,
 .elm-feature-typeB a.elm-feature-typeB-item:active .elm-featured-overlay,
 .elm-feature-typeB .elm-feature-typeB-item.elm-feature-focus .elm-featured-overlay  {
-	background-color: rgba(0, 0, 0, 75%);
+	background-color: rgba(0, 0, 0, .75);
 }
 
 .elm-feature-typeB .elm-feature-typeB-item .elm-featured-title {
@@ -1138,7 +1143,7 @@ a.announcement-listing {
     display: block;
     height: 16em;
     width: 100%;
-    background-color: rgba(	34.9, 60.8, 27.5, 60%);
+    background-color: rgba(	35, 61, 28, .60);
     opacity: 0;
 }
 
@@ -1154,7 +1159,7 @@ a.announcement-listing {
 }
 
 .elm-feature-typeC .elm-feature-typeC-item:first-of-type .elm-featured-title {
-	background-color: rgba( 34.9, 60.8, 27.5, 85%);
+	background-color: rgba( 35, 61, 28, .85);
     padding: 1.25em;
 }
 
@@ -1179,7 +1184,7 @@ a.announcement-listing {
 }
 
 .elm-feature-typeC .elm-feature-typeC-item:nth-of-type(2) .elm-featured-title {
-	background-color: rgba( 0, 0, 0, 75%);
+	background-color: rgba( 0, 0, 0, .75);
 	font-size: 1.25em;
     font-weight: lighter;
 }
