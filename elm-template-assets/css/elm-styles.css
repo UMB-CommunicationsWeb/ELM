@@ -77,6 +77,12 @@ strong {
 	text-transform: uppercase;
 }
 
+@media (max-width: 991px) {
+	body {
+		font-size: .85rem;
+	}
+}
+
 
 /*--------------------------------------------------------------
 # General elements
@@ -203,6 +209,8 @@ a:hover .elm-link-image-overlay, a:focus .elm-link-image-overlay, a:active .elm-
 	background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    -webkit-print-color-adjust: exact;
+ 	color-adjust: exact;
 }
 
 @media (max-width: 767px) {
@@ -632,6 +640,8 @@ a#elm-back-to-top:hover, a#elm-back-to-top:focus, a#elm-back-to-top:active {
 	background-size: cover;
 	background-position: center 33%;
 	min-height: 7em;
+    -webkit-print-color-adjust: exact;
+ 	color-adjust: exact;
 }
 
 /*--------------------------------------------------------------
@@ -675,6 +685,8 @@ a#elm-back-to-top:hover, a#elm-back-to-top:focus, a#elm-back-to-top:active {
 	background-size: cover;
 	background-position: center 33%;
     min-height: 7em;
+    -webkit-print-color-adjust: exact;
+ 	color-adjust: exact;
 }
 
 .umb-news-showMore , .umb-news-showMore:visited {
@@ -860,6 +872,8 @@ a.announcement-listing {
 .elm-feature-typeA {
 	max-height: 16em;
 	overflow: hidden;
+	-webkit-print-color-adjust: exact;
+ 	color-adjust: exact;
 }
 
 .elm-feature-typeA .elm-feature-typeA-item {
@@ -1031,6 +1045,11 @@ a.announcement-listing {
 # Featured items (Type B)
 --------------------------------------------------------------*/
 
+.elm-feature-typeB {
+	-webkit-print-color-adjust: exact;
+ 	color-adjust: exact;
+}
+
 .elm-feature-typeB .elm-feature-typeB-focus,
 .elm-feature-typeB .elm-feature-typeB-item {
 	display: block;	
@@ -1145,6 +1164,10 @@ a.announcement-listing {
 /*--------------------------------------------------------------
 # Featured items (Type C)
 --------------------------------------------------------------*/
+.elm-feature-typeC {
+    -webkit-print-color-adjust: exact;
+ 	color-adjust: exact;
+ }
 
 .elm-feature-typeC .elm-feature-typeC-item {
 	height: 16em;
