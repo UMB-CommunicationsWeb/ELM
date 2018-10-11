@@ -91,6 +91,9 @@ body {
 
 a {
 	-webkit-transition: color .25s, background-color .25s;
+	-moz-transition: color .25s, background-color .25s;
+	-ms-transition: color .25s, background-color .25s;
+	-o-transition: color .25s, background-color .25s;
 	transition: color .25s, background-color .25s;
 }
 
@@ -175,6 +178,9 @@ a:visited .elm-link-image-overlay {
 
 .elm-link-image-overlay {
 	-webkit-transition: opacity .25s;
+	-moz-transition: opacity .25s;
+	-ms-transition: opacity .25s;
+	-o-transition: opacity .25s;
 	transition: opacity  .25s;
 }
 
@@ -347,6 +353,10 @@ a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
     height: 5px;
     background-color: #333;
     margin: 6px 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -955,6 +965,9 @@ a.announcement-listing {
 .elm-feature-typeA .elm-featured-title,
 .elm-feature-typeA .elm-featured-title-focus {
 	-webkit-transition:  all .25s, opacity 1s, background-color 1s;
+	-moz-transition:  all .25s, opacity 1s, background-color 1s;
+	-ms-transition:  all .25s, opacity 1s, background-color 1s;
+	-o-transition:  all .25s, opacity 1s, background-color 1s;
 	transition: color all .25s, opacity 1s, background-color 1s;
 }
 
@@ -1001,6 +1014,9 @@ a.announcement-listing {
 .elm-feature-typeA-mobile .elm-feature-typeA-item:not(.elm-feature-focus) .elm-featured-title
  {
 	-webkit-transition:  all .25s;
+	-moz-transition:  all .25s;
+	-ms-transition:  all .25s;
+	-o-transition:  all .25s;
 	transition: color all .25s;
 }
 
@@ -1113,6 +1129,9 @@ a.announcement-listing {
 .elm-feature-typeB a.elm-feature-typeB-focus .elm-featured-title,
 .elm-feature-typeB a.elm-feature-typeB-item .elm-featured-overlay {
 	-webkit-transition:  all .25s, opacity 1s;
+	-moz-transition:  all .25s, opacity 1s;
+	-ms-transition:  all .25s, opacity 1s;
+	-o-transition:  all .25s, opacity 1s;
 	transition: all .25s, opacity 1s;
 }
 
@@ -1210,7 +1229,10 @@ a.announcement-listing {
 .elm-feature-typeC a.elm-feature-typeC-item .elm-featured-title,
 .elm-feature-typeC a.elm-feature-typeC-item .elm-featured-title:after,
 .elm-feature-typeC .elm-feature-typeC-item .elm-featured-overlay {
-	-webkit-transition:  all .25s;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
+	-ms-transition: all .25s;
+	-o-transition: all .25s;
 	transition: all .25s;
 }
 
