@@ -478,7 +478,7 @@ header {
 	padding: 1em 1.5em;
 }
 
-#elm-back-to-top {
+#elm-back-to-top, a#elm-back-to-top, a#elm-back-to-top:visited {
 	display: inline-block;
 	font-size: 1.5em;
 	position: fixed;
@@ -492,9 +492,10 @@ header {
 	text-align: center;
 	display: none; /*Hide on page load, reveal with JavaScript after scroll down*/
 	z-index: 1;
+	text-decoration: none;
 }
 
-a#elm-back-to-top:hover, a#elm-back-to-top:focus {
+a#elm-back-to-top:hover, a#elm-back-to-top:focus, a#elm-back-to-top:active {
 	background-color: #599b46;
 }
 
