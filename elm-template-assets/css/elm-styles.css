@@ -512,10 +512,11 @@ a#elm-back-to-top:hover, a#elm-back-to-top:focus, a#elm-back-to-top:active {
 }
 
 @media (max-width: 767px) {
-	#elm-back-to-top {
-		bottom: 0;
+	#elm-back-to-top, a#elm-back-to-top, a#elm-back-to-top:visited  {
+		bottom: auto;
 		right: 0;
 		left: 0;
+		top: 0;
 		width: 100%;
 	}
 }
