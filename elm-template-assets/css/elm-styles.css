@@ -163,7 +163,9 @@ a.elm-all-button {
 	font-size: .8em;
 }
 
-.elm-link-image-overlay {
+.elm-link-image-overlay,
+a .elm-link-image-overlay,
+a:visited .elm-link-image-overlay {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -264,7 +266,7 @@ a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
 	margin-top: 3em;
 }
 
-.elm-search-bar input#query {
+.elm-search-bar input.query {
 	border-radius: 0;
 	border: 1px solid #000;
 	padding-left: .5em;
@@ -274,7 +276,7 @@ a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
 	margin: 0;
 }
 
-.elm-search-bar button#elm-search-submit {
+.elm-search-bar button.elm-search-submit {
 	width: 20%;
 	margin-left:5%;
 	height: 2em;
@@ -290,7 +292,7 @@ a#elmHomepageLink:hover, a#elmHomepageLink:focus, a#elmHomepageLink:active {
 }
 
 @media (max-width: 767px) {
-	.elm-search-bar button#elm-search-submit {
+	.elm-search-bar button.elm-search-submit {
 		background-image: url(../images/search-mobile.png);
 	}
 }
