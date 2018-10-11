@@ -569,6 +569,12 @@ a#elm-back-to-top:hover, a#elm-back-to-top:focus, a#elm-back-to-top:active {
     line-height: 1.25;
 }
 
+@media (max-width: 767px) {
+	.elm-feed-showMore a, .elm-feed-showMore a:visited {
+		background-color: #999
+	}
+}
+
 .elm-feed-showMore a:hover, .elm-feed-showMore a:active, .elm-feed-showMore a:focus {
 	background-color: #386d2d;
 }
