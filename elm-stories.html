@@ -44,8 +44,14 @@
 
 <body>
 
-     <a id="top"></a>
-     <header>
+    <!-- accesibility skip to nav or content -->
+
+    <ul class="visuallyhidden" id="top" role="navigation" aria-label="Skip to Main Navigation or Main Content">
+        <li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to navigation</a></li>
+        <li><a href="#main-content" title="Skip to content" accesskey="c">Skip to content</a></li>
+    </ul>
+
+     <header role="banner">
 
         <div id="elmBranding" class="container">
             <div class="row">
@@ -58,7 +64,7 @@
                     <a id="elmHomepageLink" href="index.html">
                         <h1 id="elmMainTitle">The Elm</h1>
                     </a>
-                    <h2 id="elmPageTitle">Stories</h2>
+                    <h2 id="elmPageTitle">Elm Stories</h2>
                 </div>
 
                 <div class="mobileMenuToggle d-md-none col" onclick="toggleMobileMenu(this)">
@@ -69,7 +75,7 @@
 
                 <div id="searchColumn-desktop" class="col-md-3  d-none d-md-block">
                     <a class="submit-button umb_pillbutton" href="submit.html">Submit your story</a>
-                    <form class="elm-search-bar" method="get" action="/search-results/" role="search">
+                    <form class="elm-search-bar" method="get" action="/search-results/" role="search" aria-label="Search the Elm">
                         <input class="query" type="text" name="q" placeholder="Search" title="Search"><button type="submit" class="elm-search-submit"></button>
                     </form>
                 </div>
@@ -77,8 +83,10 @@
 
         </div><!-- close div#elmBranding -->
 
+        <a id="nav"></a>
+
         <!-- Desktop navigation menu -->
-        <nav class="container d-none d-md-block">
+        <nav class="container d-none d-md-block" aria-label="Navigation menu">
             <div class="row" id="elmMainNavigation">
                 <a class="col-md" onclick="toggleTopicsDesktop()" href="javascript:void(0);">Topics</a>
                 <a class="col-md" onclick="toggleSchoolsDesktop()" href="javascript:void(0);">Schools</a>
@@ -104,7 +112,7 @@
 
         <!-- Mobile navigation menu -->
 
-        <nav class="container d-md-none">
+        <nav class="container d-md-none" aria-label="Navigation menu (visible on mobile devices)">
             <div class="row" id="elmMainNavigation-mobile">
                 <span>Topics</span>
                 <div class="secondaryNav-mobile">
@@ -126,13 +134,16 @@
                 <a href="events.html">Events</a>
                 <a href="social.html">UMB Social</a>
                 <a href="submit.html">Submit your story</a>
-                <form class="elm-search-bar" method="get" action="/search-results/" role="search">
+                <form class="elm-search-bar" method="get" action="/search-results/" role="search" aria-label="Search the Elm (visible on mobile devices)">
                     <input class="query" type="text" name="q" placeholder="Search" title="Search"><button type="submit" class="elm-search-submit"></button>
                 </form>
             </div>
         </nav>
 
     </header>
+
+    <div role="main">
+
     <a id="main-content"></a>
     <div id="elmMainContent" class="container">
 <!--*******************************************
@@ -378,6 +389,7 @@
 # End of main content area
 *******************************************-->
     </div><!-- close div#elmMainContent -->
+    </div><!-- close div with role="main" (Added to meet WCAG requirements for landmarks)-->
 
     <footer>
 
